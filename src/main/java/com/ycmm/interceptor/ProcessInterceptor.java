@@ -7,9 +7,6 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Created by jishubu on 2018/4/24.
- */
 @Component
 public class ProcessInterceptor  implements HandlerInterceptor{
 
