@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="qin:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="qin.war">
+      <element id="artifact" artifact-name="qin:war exploded" />
+    </root>
+  </artifact>
+</component>

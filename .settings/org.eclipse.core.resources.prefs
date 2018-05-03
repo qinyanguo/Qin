@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/java/com/ycmm/base/BizParamBean.java=UTF-8
+encoding//src/main/java/com/ycmm/exceptions/BadRequestException.java=UTF-8
+encoding//src/main/java/com/ycmm/exceptions/ErrorMsgException.java=UTF-8
+encoding//src/main/java/com/ycmm/front/handle/service/impl/FrontHandleServiceImpl.java=UTF-8
+encoding//src/main/java/com/ycmm/front/user/controller/UserController.java=UTF-8
+encoding//src/main/java/com/ycmm/system/UserLoginCheck.java=UTF-8
+encoding//src/main/java/com/ycmm/utils/FileUtils.java=UTF-8
+encoding//src/main/java/com/ycmm/utils/PatternUtils.java=UTF-8
+encoding//src/main/java/com/ycmm/utils/WebUtils.java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/resources/db.properties=UTF-8
+encoding//src/main/resources/local.properties=UTF-8
+encoding//src/test/java=UTF-8
+encoding//src/test/resources=UTF-8
+encoding/<project>=UTF-8
