@@ -8,6 +8,7 @@ import com.ycmm.base.ResultBean;
 import com.ycmm.business.mapper.StockMapper;
 import com.ycmm.business.service.WmsStockService;
 import com.ycmm.model.Stock;
+import com.ycmm.utils.IdKit;
 import net.sf.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,14 +30,14 @@ public class WmsStockServiceImpl implements WmsStockService {
 
 	@Override
 	public Stock addStock(Stock stock) throws Exception {
-//		stock.setBatchNo(IdKit.getNumberId());
-//		stock.setCtime(System.currentTimeMillis());
-//		stock.setUtime(stock.getCtime());
-//		stock.setStorageDate(stock.getCtime());
-//		Double usableNum = stock.getUsableNum() == null ? 0d : stock.getUsableNum();
-//		Double freezeNum = stock.getFreezeNum() == null ? 0d : stock.getFreezeNum();
-//		stock.setTotal(usableNum + freezeNum);
-//		stockMapper.insertSelective(stock);
+		stock.setBatchNo(IdKit.getNumberId());
+		stock.setCtime(System.currentTimeMillis());
+		stock.setUtime(stock.getCtime());
+		stock.setStorageDate(stock.getCtime());
+		Double usableNum = stock.getUsableNum() == null ? 0d : stock.getUsableNum();
+		Double freezeNum = stock.getFreezeNum() == null ? 0d : stock.getFreezeNum();
+		stock.setTotal(usableNum + freezeNum);
+		stockMapper.insertSelective(stock);
 		return stock;
 	}
 
