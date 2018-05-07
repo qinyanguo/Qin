@@ -1,9 +1,7 @@
 package test;
 
-import com.ycmm.utils.HttpClientUtils;
-import com.ycmm.utils.SecretUtils;
+import com.ycmm.common.utils.HttpClientUtils;
 import net.sf.json.JSONObject;
-import org.junit.Test;
 
 /**
  * Created by jishubu on 2018/4/25.

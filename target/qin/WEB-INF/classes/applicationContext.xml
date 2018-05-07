@@ -24,10 +24,10 @@
 
 
 	<!-- 系统启动加载配置属性 -->
-	<bean class="com.ycmm.system.Property" init-method="init">
+	<bean class="com.ycmm.common.utils.Property" init-method="init">
 	   <property name="location" value="classpath:local.properties"/>
 	</bean>
 	
 	<!-- Spring启动手动获取bean -->
-	<bean id="springInit" class="com.ycmm.system.SpringInit"/>
+	<bean id="springInit" class="com.ycmm.base.spring.SpringInit"/>
 </beans>

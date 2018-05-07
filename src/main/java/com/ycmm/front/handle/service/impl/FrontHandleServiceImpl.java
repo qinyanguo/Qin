@@ -1,16 +1,16 @@
 package com.ycmm.front.handle.service.impl;
 
-import com.ycmm.base.BizParamBean;
-import com.ycmm.base.FrontParamBean;
-import com.ycmm.base.ResultBean;
-import com.ycmm.exceptions.BadRequestException;
-import com.ycmm.exceptions.ErrorMsgEnum;
-import com.ycmm.exceptions.ErrorMsgException;
+import com.ycmm.base.bean.BizParamBean;
+import com.ycmm.base.bean.FrontParamBean;
+import com.ycmm.base.bean.ResultBean;
+import com.ycmm.base.exceptions.base.BadRequestException;
+import com.ycmm.base.exceptions.enums.ErrorMsgEnum;
+import com.ycmm.base.exceptions.base.ErrorMsgException;
 import com.ycmm.front.handle.service.FrontHandleService;
 import com.ycmm.front.user.common.UserSignCheck;
-import com.ycmm.system.Constants;
-import com.ycmm.system.RemoveLoginCheck;
-import com.ycmm.system.UserLoginCheck;
+import com.ycmm.common.constants.Constants;
+import com.ycmm.base.system.RemoveLoginCheck;
+import com.ycmm.base.system.UserLoginCheck;
 import net.sf.json.JSONObject;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;

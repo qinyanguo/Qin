@@ -22,7 +22,7 @@
     <mvc:annotation-driven/>
 
    <mvc:interceptors>
-    <bean class="com.ycmm.interceptor.ProcessInterceptor"></bean>
+    <bean class="com.ycmm.common.interceptor.ProcessInterceptor"></bean>
    </mvc:interceptors>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"

@@ -45,12 +45,12 @@
 	                  使用这个配置,有两种选择。第一是手动在 MyBatis 的 XML 配 置文件中使用<mappers>部分来指定类路径。第二是使用
 	                  工厂 bean 的 mapperLocations 属 性。mapperLocations 属性使用一个资源位置的 list。 这个属性可以用来指定 MyBatis
 	                   的 XML 映射器文件的位置 -->
-        <property name="mapperLocations" value="classpath:sqlMapper/*.xml"></property>
+        <!--<property name="mapperLocations" value="classpath:sqlMapper/*.xml"></property>-->
 	</bean>
 
 	<!--<bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 	    <property name="basePackage" value="com.ycmm.business.*"/>
-        <property name="annotationClass" value="com.ycmm.base.MybatisMapper"></property>
+        <property name="annotationClass" value="com.ycmm.base.mybatis.mapper.MybatisMapper"></property>
 	    <property name="sqlSessionFactoryBeanName" value="v3SqlSessionFactory"/>
 	</bean>-->
 

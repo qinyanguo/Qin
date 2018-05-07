@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Map;
 
 import com.github.pagehelper.PageInfo;
-import com.ycmm.base.BizParamBean;
-import com.ycmm.base.ResultBean;
+import com.ycmm.base.bean.BizParamBean;
+import com.ycmm.base.bean.ResultBean;
 import com.ycmm.model.Stock;
 import net.sf.json.JSONObject;
 
