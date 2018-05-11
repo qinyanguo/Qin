@@ -9,179 +9,11 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/ycmm/MyGenerator.java" line="26" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3371d87-e400-4422-8c97-3b3665e292a9" name="Default" comment="ContextHolderUtils 获取request  session&#10;log4j">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/spring/ContextHolderUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/base/BizParamBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/base/FrontParamBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/base/MybatisMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/base/ResultBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/cache/CacheService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/cache/impl/EhcacheImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/cache/impl/RedisCacheImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/exceptions/BadRequestException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/exceptions/BaseException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/exceptions/ErrorMsgEnum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/exceptions/ErrorMsgException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/exceptions/ExceptionCause.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/exceptions/GlobalExceptionHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/exceptions/NoAuthException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/exceptions/OvertimeException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/exceptions/UnauthorizedExcception.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/interceptor/ProcessInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/lock/Lock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/lock/impl/AbstractLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/lock/impl/RedisLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/pay/PayConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/system/Constants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/system/Property.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/system/PropertyUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/system/RemoveLoginCheck.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/system/SpringInit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/system/UserLoginCheck.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/ExportExcelUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/FileUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/HttpClientUtils$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/HttpClientUtils$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/HttpClientUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/HttpClientUtils1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/PatternUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/SecretUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/StringKit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/Transcoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/WebUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/utils/sms/SmsSendYunpian.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/base/BizParamBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/base/FrontParamBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/base/MybatisMapper.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/base/ResultBean.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/cache/CacheService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/cache/impl/EhcacheImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/cache/impl/RedisCacheImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/exceptions/BadRequestException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/exceptions/BaseException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/exceptions/ErrorMsgEnum.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/exceptions/ErrorMsgException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/exceptions/ExceptionCause.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/exceptions/GlobalExceptionHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/exceptions/NoAuthException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/exceptions/OvertimeException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/exceptions/UnauthorizedExcception.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/interceptor/ProcessInterceptor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/lock/Lock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/lock/impl/AbstractLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/lock/impl/RedisLock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/pay/PayConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/system/Constants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/system/Property.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/system/PropertyUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/system/RemoveLoginCheck.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/system/SpringInit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/system/UserLoginCheck.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/ExportExcelUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/FileUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/HttpClientUtils$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/HttpClientUtils$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/HttpClientUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/HttpClientUtils1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/PatternUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/SecretUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/StringKit.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/Transcoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/WebUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/utils/sms/SmsSendYunpian.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/lib/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/ku_1524895783029.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/ku_1524898316003.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/ku_1524898416611.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/ku_1524898522716.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/ku_1524899167863.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/ku_1524899503676.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/ku_1524899635571.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/ku_1524899979322.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/ku_1524904528111.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/qin/ku_1524908562235.xls" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/test/Test1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/test/Test2.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/business/service/WmsStockService.class" afterPath="$PROJECT_DIR$/target/classes/com/ycmm/business/service/WmsStockService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/business/service/impl/WmsStockServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ycmm/business/service/impl/WmsStockServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/front/handle/controller/FrontHandleController.class" afterPath="$PROJECT_DIR$/target/classes/com/ycmm/front/handle/controller/FrontHandleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/front/handle/service/FrontHandleService.class" afterPath="$PROJECT_DIR$/target/classes/com/ycmm/front/handle/service/FrontHandleService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/front/handle/service/impl/FrontHandleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ycmm/front/handle/service/impl/FrontHandleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/front/user/common/UserSignCheck.class" afterPath="$PROJECT_DIR$/target/classes/com/ycmm/front/user/common/UserSignCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ycmm/front/user/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/ycmm/front/user/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin.war" afterPath="$PROJECT_DIR$/target/qin.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/business/service/WmsStockService.class" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/business/service/WmsStockService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/business/service/impl/WmsStockServiceImpl.class" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/business/service/impl/WmsStockServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/front/handle/controller/FrontHandleController.class" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/front/handle/controller/FrontHandleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/front/handle/service/FrontHandleService.class" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/front/handle/service/FrontHandleService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/front/handle/service/impl/FrontHandleServiceImpl.class" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/front/handle/service/impl/FrontHandleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/front/user/common/UserSignCheck.class" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/front/user/common/UserSignCheck.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/front/user/controller/UserController.class" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/com/ycmm/front/user/controller/UserController.class" />
+    <list default="true" id="a3371d87-e400-4422-8c97-3b3665e292a9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/tools/CommonUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/business/service/WmsStockService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/business/service/WmsStockService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/business/service/impl/WmsStockServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/business/service/impl/WmsStockServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/controller/FrontHandleController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/controller/FrontHandleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/service/FrontHandleService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/service/FrontHandleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/service/impl/FrontHandleServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/service/impl/FrontHandleServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/front/user/common/UserSignCheck.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/front/user/common/UserSignCheck.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/WebUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/WebUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/front/user/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/front/user/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/ehcache.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/ehcache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/redis-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/redis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-db.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-db.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/test/TestControlle.java" afterPath="$PROJECT_DIR$/src/test/java/test/TestControlle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/ehcache.xml" afterPath="$PROJECT_DIR$/target/classes/spring/ehcache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/redis-config.xml" afterPath="$PROJECT_DIR$/target/classes/spring/redis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/spring-db.xml" afterPath="$PROJECT_DIR$/target/classes/spring/spring-db.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/applicationContext.xml" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/spring/ehcache.xml" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/spring/ehcache.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/spring/redis-config.xml" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/spring/redis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/spring/spring-db.xml" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/spring/spring-db.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin/WEB-INF/classes/spring/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/qin/WEB-INF/classes/spring/spring-mvc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/base/BizParamBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/bean/BizParamBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/base/FrontParamBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/bean/FrontParamBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/base/MybatisMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/mybatis/mapper/MybatisMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/base/ResultBean.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/bean/ResultBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/cache/CacheService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/cache/CacheService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/cache/impl/EhcacheImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/cache/impl/EhcacheImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/cache/impl/RedisCacheImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/cache/impl/RedisCacheImpl.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/exceptions/BadRequestException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/base/BadRequestException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/exceptions/BaseException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/BaseException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/exceptions/ErrorMsgEnum.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/enums/ErrorMsgEnum.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/exceptions/ErrorMsgException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/base/ErrorMsgException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/exceptions/ExceptionCause.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/enums/ExceptionCause.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/exceptions/GlobalExceptionHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/GlobalExceptionHandler.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/exceptions/NoAuthException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/base/NoAuthException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/exceptions/OvertimeException.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/base/OvertimeException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/exceptions/UnauthorizedExcception.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/base/UnauthorizedExcception.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/interceptor/ProcessInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/interceptor/ProcessInterceptor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/lock/Lock.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/lock/Lock.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/lock/impl/AbstractLock.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/lock/impl/AbstractLock.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/lock/impl/RedisLock.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/lock/impl/RedisLock.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/pay/PayConstants.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/constants/PayConstants.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/system/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/constants/Constants.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/system/Property.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/Property.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/system/PropertyUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/PropertyUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/system/RemoveLoginCheck.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/system/RemoveLoginCheck.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/system/SpringInit.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/spring/SpringInit.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/system/UserLoginCheck.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/base/system/UserLoginCheck.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/ExportExcelUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/ExportExcelUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/FileUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/FileUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/HttpClientUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/HttpClientUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/HttpClientUtils1.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/HttpClientUtils1.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/IdKit.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/IdKit.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/ObjectId.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/ObjectId.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/PatternUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/PatternUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/SecretUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/SecretUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/StringKit.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/StringKit.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/Transcoder.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/Transcoder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/WebUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/WebUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/utils/sms/SmsSendYunpian.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/sms/SmsSendYunpian.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -220,13 +52,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/user/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="308">
+              <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
               <folding>
-                <element signature="e#1411#1438#0" expanded="true" />
+                <element signature="e#2287#2314#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -235,33 +67,9 @@
       <file leaf-file-name="RedisLock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/lock/impl/RedisLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="163" column="13" lean-forward="true" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
+            <state relative-caret-position="550">
+              <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/WebUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="346" column="13" lean-forward="true" selection-start-line="346" selection-start-column="13" selection-end-line="346" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ContextHolderUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/spring/ContextHolderUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#758#759#0" expanded="true" />
-                <element signature="e#812#813#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -269,18 +77,8 @@
       <file leaf-file-name="UserSignCheck.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/user/common/UserSignCheck.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-777">
-              <caret line="34" column="77" lean-forward="true" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FrontHandleController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/controller/FrontHandleController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+            <state relative-caret-position="1049">
+              <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -323,6 +121,10 @@
       <find>jdbc.url</find>
       <find>driverClass</find>
       <find>FrameworkServlet</find>
+      <find>getFromUrl</find>
+      <find>getOperatingSystem</find>
+      <find>operatingSystem</find>
+      <find>UserAgent</find>
     </findStrings>
     <dirStrings>
       <dir>F:\Demo\project\Qin</dir>
@@ -342,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/utils/HttpClientUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.properties" />
         <option value="$MAVEN_REPOSITORY$/tk/mybatis/mapper/3.4.0-RC1/mapper-3.4.0-RC1.jar!/tk/mybatis/mapper/mapperhelper/EntityHelper.class" />
         <option value="$MAVEN_REPOSITORY$/tk/mybatis/mapper/3.4.0-RC1/mapper-3.4.0-RC1.jar!/tk/mybatis/mapper/entity/Example.class" />
@@ -390,9 +191,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/controller/FrontHandleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ycmm/base/spring/ContextHolderUtils.java" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/front/user/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/lock/impl/RedisLock.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/WebUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/front/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/tools/CommonUtils.java" />
       </list>
     </option>
   </component>
@@ -562,7 +364,7 @@
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
-      <autoscrollFromSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="false" />
       <sortByType />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
@@ -577,6 +379,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: eu.bitwalker:UserAgentUtils:1.20" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserAgentUtils-1.20.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Maven: eu.bitwalker:UserAgentUtils:1.20" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserAgentUtils-1.20.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="useragentutils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Qin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -610,356 +462,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ycmm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ycmm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="front" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ycmm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="front" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ycmm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="front" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ycmm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ycmm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ycmm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lock" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="impl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ycmm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ycmm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Qin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ycmm" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1688,7 +1190,7 @@
       <workItem from="1524470888619" duration="2000" />
       <workItem from="1524471117431" duration="29747000" />
       <workItem from="1524624956362" duration="78829000" />
-      <workItem from="1525318361222" duration="27805000" />
+      <workItem from="1525318361222" duration="39697000" />
     </task>
     <task id="LOCAL-00001" summary="拦截器修改">
       <created>1525319033088</created>
@@ -1704,7 +1206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1525422227541</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ContextHolderUtils 获取request  session&#10;log4j">
+      <created>1525687553776</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1525687553776</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1722,7 +1231,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144946000" />
+    <option name="totallyTimeSpent" value="156838000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1750,19 +1259,19 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2537961" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" x="22" y="352" width="1876" height="336" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36767897" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36767897" sideWeight="0.49785408" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4175705" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.164859" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39761648" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21481876" sideWeight="0.496208" order="0" side_tool="false" content_ui="combo" x="776" y="166" width="355" height="707" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21481876" sideWeight="0.496208" order="0" side_tool="false" content_ui="combo" x="776" y="166" width="355" height="707" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2585837" sideWeight="0.503792" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41323212" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22776572" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2585837" sideWeight="0.503792" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1822,49 +1331,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/TestExcel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/TestControlle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="18" column="44" lean-forward="true" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/interceptor/ProcessInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-293">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/RDE.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/TestService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -2184,14 +1650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/user/common/UserSignCheck.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-777">
-          <caret line="34" column="77" lean-forward="true" selection-start-line="34" selection-start-column="77" selection-end-line="34" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
@@ -2200,10 +1658,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/controller/FrontHandleController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/WebUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+        <state relative-caret-position="1188">
+          <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -2220,29 +1678,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/user/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/controller/FrontHandleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-          <folding>
-            <element signature="e#1411#1438#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="89" column="41" lean-forward="false" selection-start-line="89" selection-start-column="41" selection-end-line="89" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/user/common/UserSignCheck.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1049">
+          <caret line="60" column="9" lean-forward="true" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/business/service/WmsStockService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/lock/impl/RedisLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="163" column="13" lean-forward="true" selection-start-line="163" selection-start-column="13" selection-end-line="163" selection-end-column="13" />
+        <state relative-caret-position="550">
+          <caret line="58" column="13" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/WebUtils.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/eu/bitwalker/UserAgentUtils/1.20/UserAgentUtils-1.20-sources.jar!/eu/bitwalker/useragentutils/OperatingSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="346" column="13" lean-forward="true" selection-start-line="346" selection-start-column="13" selection-end-line="346" selection-end-column="13" />
+        <state relative-caret-position="264">
+          <caret line="124" column="68" lean-forward="false" selection-start-line="124" selection-start-column="68" selection-end-line="124" selection-end-column="68" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/eu/bitwalker/UserAgentUtils/1.20/UserAgentUtils-1.20-sources.jar!/eu/bitwalker/useragentutils/UserAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="46" column="45" lean-forward="false" selection-start-line="46" selection-start-column="45" selection-end-line="46" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-752">
+          <caret line="196" column="34" lean-forward="true" selection-start-line="196" selection-start-column="34" selection-end-line="196" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/tools/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="55" column="37" lean-forward="true" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+          <folding>
+            <element signature="e#2287#2314#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

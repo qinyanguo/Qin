@@ -126,7 +126,8 @@ public class WebUtils {
      * js的话就是这样做：javascript:document.referrer
      * 那它能干什么用呢？我举两个例子：
      * 1，防止盗连，比如我是个下载软件的网站，在下载页面我先用referer来判断上一页面是不是自己网站，如果不是，说明有人盗连了你的下载地址。
-     * 2，电子商务网站的安全，我在提交信用卡等重要信息的页面用referer来判断上一页是不是自己的网站，如果不是，可能是黑客用自己写的一个表单，来提交，为了能跳过你上一页里的javascript的验证等目的。
+     * 2，电子商务网站的安全，我在提交信用卡等重要信息的页面用referer来判断上一页是不是自己的网站，如果不是，可能是黑客用自己写的一个表单，
+     *    来提交，为了能跳过你上一页里的javascript的验证等目的。
      * 使用referer的注意事项：
      * 如果我是直接在浏览器里输入有referer的页面，返回是null（jsp），也就是说referer只有从别的页面点击连接来到这页的才会有内容。
      * 我做了个实验，比如我的referer代码在a.jsp中，它的上一页面是b.htm，c.htm是一个带有iframe的页面，它把a.jsp嵌在iframe里了。
@@ -134,7 +135,7 @@ public class WebUtils {
      * (也就是说要判断是不是从b.html中跳过来的，只有先进入b.html中才通过request.getHeader("Referer")拿到上一个页面是b.html，
      * 从而可以进入c.html中，进到c.html中即可执行a.jsp)否则直接进c.html中是拿不到上一个页面是b.html的，从而可以判断出链接来源不对
      * 
-     * 这里凡是从以下连个链接过来的都不允许跳转
+     * 这里凡是从以下两个链接过来的都不允许跳转
      */	
 		if(site && (PatternUtils.regex("17buy\\.com", fromUrl, false) 
 				|| (PatternUtils.regex("127.0.0.1", fromUrl, false)))) {
@@ -303,17 +304,17 @@ public class WebUtils {
 			urlConnection.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1)");
 			urlConnection.setRequestProperty("Accept",
 							"text/vnd.wap.wml,text/html, application/xml;q=0.9, application/xhtml+xml;q=0.9, image/png, image/jpeg, image/gif, image/x-xbitmap, */*;q=0.1");
-			/**
-			 * 有什么疑问的话，可以查看JDK的API文档，这个可以实时看。至于为什么要设置
-			 * gzip，而又不设置deflate，原因如下，有些网站他不管你能接受什么压缩格式
-			 * ，统统也会压缩网页内容传给你。当然IE，FF能处理好这些内容
-			 * 。所以我们通过浏览器查看的时候完全正常。一般gzip的压缩可以将一个33K的文件压缩成7K
-			 * ，这样会节约不少带宽，但服务器的负荷并没有减轻
-			 * ，因为他要压缩文件呀。至于为什么不用deflate，是由于绝大多数网站的压缩方式是用gzip
-			 * ，而在有些网站中，明明是用的gzip却返回deflate的压缩标识
-			 * 。这有什么意义呢，所以干脆就告诉服务器，我不接受deflate，因为他太丑了
-			 * ，又长，哪像gzip这么潮呀。呵呵，对于浏览量大的静态网页服务器，这样做很是必要。100M的独享服务器，他也只有100M呀。
-			 */
+            /**
+             * 有什么疑问的话，可以查看JDK的API文档，这个可以实时看。至于为什么要设置
+             * gzip，而又不设置deflate，原因如下，有些网站他不管你能接受什么压缩格式
+             * ，统统也会压缩网页内容传给你。当然IE，FF能处理好这些内容
+             * 。所以我们通过浏览器查看的时候完全正常。一般gzip的压缩可以将一个33K的文件压缩成7K
+             * ，这样会节约不少带宽，但服务器的负荷并没有减轻
+             * ，因为他要压缩文件呀。至于为什么不用deflate，是由于绝大多数网站的压缩方式是用gzip
+             * ，而在有些网站中，明明是用的gzip却返回deflate的压缩标识
+             * 。这有什么意义呢，所以干脆就告诉服务器，我不接受deflate，因为他太丑了
+             * ，又长，哪像gzip这么潮呀。呵呵，对于浏览量大的静态网页服务器，这样做很是必要。100M的独享服务器，他也只有100M呀。
+             */
 //			urlConnection.setRequestProperty("Accept-Encoding", "gzip");// 为什么没有deflate呢
 			urlConnection.setRequestProperty("Content-type", "text/html");
 			urlConnection.setRequestProperty("Connection", "close"); //keep-Alive，有什么用呢，你不是在访问网站，你是在采集。嘿嘿。减轻别人的压力，也是减轻自己。

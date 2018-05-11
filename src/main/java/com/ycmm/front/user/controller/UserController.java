@@ -6,10 +6,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.ycmm.base.bean.BizParamBean;
 import com.ycmm.base.bean.FrontParamBean;
 import com.ycmm.base.bean.ResultBean;
+import com.ycmm.base.exceptions.base.ErrorMsgException;
 import com.ycmm.common.cache.CacheService;
 import com.ycmm.common.constants.Constants;
+import com.ycmm.common.tools.CommonUtils;
+import com.ycmm.common.utils.WebUtils;
 import net.sf.json.JSONObject;
 
 import org.apache.commons.lang.StringUtils;
@@ -39,6 +43,24 @@ public class UserController {
             frontParamBean) {
         ResultBean resultBean = null;
         JSONObject biz_param = frontParamBean.getBiz_param();
+        String userName = biz_param.optString("userName");
+        String passWord = biz_param.optString("passWord");
+        try {
+            if (StringUtils.isEmpty(userName)) {
+                throw new ErrorMsgException("请输入用户名");
+            }
+            if (StringUtils.isEmpty(passWord)) {
+                throw new ErrorMsgException("请输入登录密码");
+            }
+            BizParamBean bizParamBean = new BizParamBean(frontParamBean);
+            //利用Nginx做分发处理时，获取客户端IP地址
+            bizParamBean.setIp(WebUtils.getNginxAddress(request));
+            bizParamBean.setModel(CommonUtils.getModel(request));
+
+        } catch (ErrorMsgException e) {
+            e.printStackTrace();
+        }
+
 
         return resultBean;
     }
