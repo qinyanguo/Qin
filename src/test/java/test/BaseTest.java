@@ -13,7 +13,7 @@ public class BaseTest {
     @Before
     public void before() {
         if (context == null || !context.isRunning()){
-            context = new ClassPathXmlApplicationContext("/applicationContext.xml");
+            context = new ClassPathXmlApplicationContext("/META-INF/applicationContext.xml");
         }
         if (!context.isRunning()) {
             context.start();
@@ -25,8 +25,8 @@ public class BaseTest {
 
     //针对不能获取bean，测试是否能获取bean，判断是配置文件问题还是注解问题
     public static void main(String[] args) {
-        context = new ClassPathXmlApplicationContext("/applicationContext.xml");
-        Object stockMapper = context.getBean("StockMapper");
+        context = new ClassPathXmlApplicationContext("/META-INF/applicationContext.xml");
+        Object stock = context.getBean("baseBizEmployeeMapper");
     }
 
 }

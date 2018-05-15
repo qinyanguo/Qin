@@ -8,6 +8,6 @@
     </settings>
 
     <mappers>
-        <!--<mapper resource="sqlMapper/StockMapper.xml" />-->
+        <!--<mapper resource="sqlMapper/BaseBizEmployeeMapper.xml" />-->
     </mappers>
 </configuration>

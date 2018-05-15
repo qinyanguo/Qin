@@ -6,42 +6,67 @@
 
     <context id="biz-demo" targetRuntime="MyBatis3">
 
+        <!--<plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin"></plugin>-->
+        <!--<plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>-->
+        <!--<plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>-->
+        <!--<plugin type="tk.mybatis.mapper.generator.MapperPlugin">-->
+            <!--<property name="mappers" value="tk.mybatis.mapper.common.Mapper" />-->
+            <!--&lt;!&ndash; caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true &ndash;&gt;-->
+            <!--<property name="caseSensitive" value="true" />-->
+        <!--</plugin>-->
+
+        <!--<commentGenerator>-->
+            <!--<property name="suppressDate" value="true" />-->
+        <!--</commentGenerator>-->
+        <!--&lt;!&ndash; MYSQL &ndash;&gt;-->
+        <!--<jdbcConnection driverClass="com.mysql.jdbc.Driver"-->
+                        <!--userId="root" password="sysdba" connectionURL="jdbc:mysql://192.168.1.125:3306/mgycmm" />-->
+
+        <!--<javaTypeResolver>-->
+            <!--<property name="forceBigDecimals" value="false" />-->
+        <!--</javaTypeResolver>-->
+
         <plugin type="org.mybatis.generator.plugins.CaseInsensitiveLikePlugin"></plugin>
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
-        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"></plugin>
-        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-            <property name="mappers" value="tk.mybatis.mapper.common.Mapper" />
-            <!-- caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true -->
-            <property name="caseSensitive" value="true" />
-        </plugin>
+        <!-- 增加分页处理 -->
+        <plugin type="com.ycmm.base.mybatis.plugins.MysqlPaginationPlugin"></plugin>
 
         <commentGenerator>
             <property name="suppressDate" value="true" />
         </commentGenerator>
         <!-- MYSQL -->
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        userId="root" password="sysdba" connectionURL="jdbc:mysql://192.168.1.125:3306/mgycmm_wms" />
+                        userId="root" password="sysdba" connectionURL="jdbc:mysql://192.168.1.125:3306/mgycmm" />
 
         <javaTypeResolver>
             <property name="forceBigDecimals" value="false" />
         </javaTypeResolver>
 
+
         <!-- bean 实体类 生成包 -->
         <javaModelGenerator targetPackage="com.ycmm.model"
-                            targetProject="F:\Demo\project\Qin\src\main\java" />
+                            targetProject="F:\Demo\Qin\src\main\java" />
         <!-- mybatis Sql配置文件 -->
         <sqlMapGenerator targetPackage="sqlMapper"
-                         targetProject="F:\Demo\project\Qin\src\main\java" />
+                         targetProject="F:\Demo\Qin\src\main\java" />
         <!-- mapper Dao接口类 -->
         <javaClientGenerator targetPackage="com.ycmm.business.mapper"
-                             targetProject="F:\Demo\project\Qin\src\main\java" type="XMLMAPPER" />
+                             targetProject="F:\Demo\Qin\src\main\java" type="XMLMAPPER" />
 
-        <!-- 需要生成的表的名称  wms_stock-->
-         <table tableName="" domainObjectName="Stock"
-            enableDeleteByExample="false" enableSelectByExample="false"
-            enableUpdateByExample="false" enableCountByExample="false">
-            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
-        </table>
+        <!-- 需要生成的表的名称
+        <table tableName="base_biz_employee"  此配置不生成  XxxExample
+                enableDeleteByExample="false" enableSelectByExample="false"
+                enableUpdateByExample="false" enableCountByExample="false">
+        -->
+         <table tableName="base_biz_employee">
+        <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        <columnOverride column="ctime"
+           javaType="java.lang.String"></columnOverride> <columnOverride column="utime"
+           javaType="java.lang.String"></columnOverride> <columnOverride column="leaveDate"
+           javaType="java.lang.String"></columnOverride> <columnOverride column="entryDate"
+           javaType="java.lang.String"></columnOverride> <columnOverride column="birthday"
+           javaType="java.lang.String"></columnOverride> <columnOverride column="gender"
+           javaType="java.lang.Integer"></columnOverride> </table>
 
     </context>
 

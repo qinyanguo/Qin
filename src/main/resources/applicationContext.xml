@@ -9,9 +9,9 @@
 	   	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
 	   	">
 
-	<import resource="classpath:/spring/spring-db.xml"/>
-    <import resource="classpath:/spring/ehcache.xml" />
-    <import resource="classpath:/spring/redis-config.xml" />
+	<import resource="classpath:META-INF/spring/spring-db.xml"/>
+    <import resource="classpath:META-INF/spring/ehcache.xml" />
+    <import resource="classpath:META-INF/spring/redis-config.xml" />
 
     <context:annotation-config/>
 	<!-- 配置自动注解扫描 -->
@@ -20,7 +20,6 @@
         <context:include-filter type="annotation"
                                 expression="org.springframework.stereotype.Controller" />
 	</context:component-scan>
-
 
 
 	<!-- 系统启动加载配置属性 -->

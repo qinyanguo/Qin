@@ -3,7 +3,11 @@
     <CLASSES>
       <root url="jar://D:/Maven_Jar/chardet/chardet/1.0/chardet-1.0.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="jar://D:/Maven_Jar/chardet/chardet/1.0/chardet-1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Maven_Jar/chardet/chardet/1.0/chardet-1.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

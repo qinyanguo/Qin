@@ -1,12 +1,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
- xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>qin</groupId>
-  <artifactId>qin</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>war</packaging>
-  
-   <!-- 变量 -->
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>qin</groupId>
+    <artifactId>qin</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+    <!-- 变量 -->
     <properties>
         <pack.sort>0</pack.sort>
         <javase.version>1.8</javase.version>
@@ -426,17 +426,17 @@
             </exclusions>
         </dependency>
         <!--通用Mapper-->
-        <dependency>
-            <groupId>tk.mybatis</groupId>
-            <artifactId>mapper</artifactId>
-            <version>3.4.0-RC1</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>tk.mybatis</groupId>-->
+            <!--<artifactId>mapper</artifactId>-->
+            <!--<version>3.4.0-RC1</version>-->
+        <!--</dependency>-->
         <!--分页插件-->
-        <dependency>
-            <groupId>tk.mybatis</groupId>
-            <artifactId>pagehelper</artifactId>
-            <version>5.0.0-RC1</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>tk.mybatis</groupId>-->
+            <!--<artifactId>pagehelper</artifactId>-->
+            <!--<version>5.0.0-RC1</version>-->
+        <!--</dependency>-->
 
         <!-- java api 核心 -->
         <dependency>
@@ -458,9 +458,36 @@
 
     </dependencies>
 
+    <!--最大的问题就是mapper xml路径问题:
+    Java 项目分为两个部分，一个是源码，一个是资源，在使用maven等构建工具时，
+    默认会将源码编译后再加上资源目录的文件放到target目录下作为最后运行的文件（可以是war,jar,
+    或者目录）。有时为了方便，我们会在src/main/java源码目录下放了资源文件，例如mybatis的mapper文件，
+    方便我们编程时展开查看。这时，我们需要设置编译时也将这些配置文件放到target目录下，否则最后的target
+    目录式没有这些文件的。在maven中，可以很方便地在build元素中的<resources> </resources>中添加：-->
     <build>
         <finalName>${project.artifactId}</finalName>
         <resources>
+            <!--注意,如果将静态资源放在src/main/java中,那么编译时将被maven忽略,在target目录下将没有这些资源,
+            此处,我们将mybatis的mapper.xml放在了dal包中,方便编程查看,所以需要将该目录添加为资源目录.-->
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+                <!--<excludes>-->
+                    <!--<exclude>log4j.properties</exclude>-->
+                    <!--<exclude>gen/*.xml</exclude>-->
+                    <!--<exclude>*.properties</exclude>-->
+                    <!--<exclude>*.xml</exclude>-->
+                <!--</excludes>-->
+                <targetPath>META-INF</targetPath>
+            </resource>
+            <resource>
+                <directory>src/main/java/sqlMapper</directory>
+                <filtering>true</filtering>
+                <includes>
+                    <include>*.xml</include>
+                </includes>
+                <targetPath>sqlMapper</targetPath>
+            </resource>
         </resources>
         <plugins>
             <plugin>
@@ -543,5 +570,5 @@
             </plugins>
         </pluginManagement>
     </build>
-  
+
 </project>
