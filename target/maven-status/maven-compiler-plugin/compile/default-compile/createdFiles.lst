@@ -27,6 +27,7 @@ com\ycmm\base\system\UserLoginCheck.class
 com\ycmm\front\handle\service\FrontHandleService.class
 com\ycmm\common\utils\PropertyUtils.class
 com\ycmm\common\utils\HttpClientUtils$1.class
+com\ycmm\front\handle\controller\FrontHandleController.class
 com\ycmm\base\exceptions\base\NoAuthException.class
 com\ycmm\base\bean\ResultBean.class
 com\ycmm\model\BaseBizEmployeeExample.class

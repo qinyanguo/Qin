@@ -2,7 +2,7 @@ package com.ycmm.base.bean;
 
 import java.io.Serializable;
 
-import com.ycmm.base.bean.FrontParamBean;
+import com.alibaba.fastjson.JSON;
 import net.sf.json.JSONObject;
 
 /**
@@ -46,6 +46,24 @@ public class BizParamBean implements Serializable, Cloneable {
         this.version = frontParamBean.getVersion();
     }
 
+    public <T> T getBiz_param(Class<T> clazz) {
+        if (clazz == Page.class) {
+            return (T)getPage();
+        }
+        if(biz_param == null) {
+            biz_param = new JSONObject();
+        }
+        return JSON.parseObject(biz_param.toString(), clazz);
+    }
+
+    private Page getPage() {
+        if(biz_param == null) {
+            return new Page();
+        }
+        int pn = biz_param.optInt("pn");
+        int pSize = biz_param.optInt("pSize");
+        return new Page(pn, pSize);
+    }
 
     public String getVersion() {
         return version;
@@ -76,24 +94,30 @@ public class BizParamBean implements Serializable, Cloneable {
     }
 
     public void setIp(String ip) {
+
         this.ip = ip;
     }
 
     public String getUid() {
+
         return uid;
     }
 
     public void setUid(String uid) {
+
         this.uid = uid;
     }
 
     public JSONObject getBiz_param() {
+
         return biz_param;
     }
 
     public void setBiz_param(JSONObject biz_param) {
+
         this.biz_param = biz_param;
     }
+
 
 
 }

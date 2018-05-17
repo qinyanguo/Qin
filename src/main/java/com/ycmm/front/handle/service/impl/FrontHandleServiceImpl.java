@@ -32,19 +32,19 @@ public class FrontHandleServiceImpl implements FrontHandleService {
     public ResultBean frontHandle(FrontParamBean frontParam, String ip, String model) throws Exception {
         ResultBean result = null;
         try {
-            // 验证码攻击处理
-            if ("ANDROID".equals(model)) {
-                if ("getVerifyCode".equals(frontParam.getBiz_method())
-                        || "getRePwdCode".equals(frontParam.getBiz_method())
-                        || "getLoginCode".equals(frontParam.getBiz_method())
-                        || "getBindingCode".equals(frontParam.getBiz_method())) {
-                    // 判断是否是攻击的设备唯一标志
-                    if ("13065ffa4e344b5334e".equals(frontParam.getDev())) {
-                        logger.error("===========验证码攻击拦截==========[" + ip + "]");
-                        return new ResultBean("验证码获取成功");
-                    }
-                }
-            }
+            // 验证码攻击处理  此法处理不妥  对验证码攻击，可用redis解决，https://blog.csdn.net/tianyaleixiaowu/article/details/74549145
+//            if ("ANDROID".equals(model)) {
+//                if ("getVerifyCode".equals(frontParam.getBiz_method())
+//                        || "getRePwdCode".equals(frontParam.getBiz_method())
+//                        || "getLoginCode".equals(frontParam.getBiz_method())
+//                        || "getBindingCode".equals(frontParam.getBiz_method())) {
+//                    // 判断是否是攻击的设备唯一标志
+//                    if ("13065ffa4e344b5334e".equals(frontParam.getDev())) {
+//                        logger.error("===========验证码攻击拦截==========[" + ip + "]");
+//                        return new ResultBean("验证码获取成功");
+//                    }
+//                }
+//            }
 
             // 自定义 业务接口对象名 根据变量名XXX获得字段     获得frontParam对象所属的类型的对象
             Field field = this.getClass().getDeclaredField(frontParam.getBiz_module());

@@ -14,6 +14,7 @@ import com.ycmm.common.cache.CacheService;
 import com.ycmm.common.constants.Constants;
 import com.ycmm.common.tools.CommonUtils;
 import com.ycmm.common.utils.WebUtils;
+import com.ycmm.front.user.service.UserSignLoginService;
 import net.sf.json.JSONObject;
 
 import org.apache.commons.lang.StringUtils;
@@ -30,6 +31,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class UserController {
 
     @Autowired
+    UserSignLoginService userSignLoginService;
+
+    @Autowired
     @Qualifier("redisCache")
     private CacheService redisCache;
 
@@ -43,10 +47,10 @@ public class UserController {
             frontParamBean) {
         ResultBean resultBean = null;
         JSONObject biz_param = frontParamBean.getBiz_param();
-        String userName = biz_param.optString("userName");
+        String phone = biz_param.optString("phone");
         String passWord = biz_param.optString("passWord");
         try {
-            if (StringUtils.isEmpty(userName)) {
+            if (StringUtils.isEmpty(phone)) {
                 throw new ErrorMsgException("请输入用户名");
             }
             if (StringUtils.isEmpty(passWord)) {
@@ -56,8 +60,8 @@ public class UserController {
             //利用Nginx做分发处理时，获取客户端IP地址
             bizParamBean.setIp(WebUtils.getNginxAddress(request));
             bizParamBean.setModel(CommonUtils.getModel(request));
-
-        } catch (ErrorMsgException e) {
+            resultBean = userSignLoginService.signLogin(bizParamBean);
+        } catch (Exception e) {
             e.printStackTrace();
         }
 
