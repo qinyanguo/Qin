@@ -2,14 +2,22 @@ package com.ycmm.business.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
+
 import com.ycmm.base.bean.Page;
+import com.ycmm.base.enums.Model;
 import com.ycmm.base.exceptions.base.ErrorMsgException;
 import com.ycmm.business.mapper.BaseBizEmployeeMapper;
 import com.ycmm.business.mapper.BizUserMapper;
 import com.ycmm.business.service.EmployeeService;
 import com.ycmm.business.service.UserService;
 import com.ycmm.common.cache.CacheService;
+import com.ycmm.common.constants.Constants;
+import com.ycmm.common.lock.Lock;
+import com.ycmm.common.lock.impl.RedisLock;
 import com.ycmm.common.utils.DateUtils;
+import com.ycmm.common.utils.IdKit;
+import com.ycmm.common.utils.NameCheckOut;
 import com.ycmm.model.BaseBizEmployee;
 import com.ycmm.model.BizUser;
 import com.ycmm.model.BizUserExample;
@@ -41,6 +49,67 @@ public class UserServiceImpl implements UserService {
     @Autowired
     @Qualifier("redisCache")
     private CacheService redisCache;
+
+    @Override
+    public ResultBean registerUser(BizParamBean bizParamBean) throws Exception {
+        BizUser bizuser = bizParamBean.getBiz_param(BizUser.class);
+        if (StringUtils.isNotBlank(bizuser.getFullname())) {
+            if (!NameCheckOut.isCheckNameNorm(bizuser.getFullname())) {
+                throw new ErrorMsgException("请检查您输入的名称,可能包含非法字符哟");
+            }
+            if (!NameCheckOut.isCheckName(bizuser.getFullname())) {
+                throw new ErrorMsgException("请检查您输入的名称长度(中文不能超过15个字,英文不要超过30个字符哟)");
+            }
+            if (!NameCheckOut.isCheckNameEspecial(bizuser.getFullname())) {
+                throw new ErrorMsgException("亲,该名称已被占用了,请换个名字试试哟！");
+            }
+            bizuser.setFullname(bizuser.getFullname().replaceAll("\\s*", ""));
+        }
+        if (StringUtils.isEmpty(bizuser.getPhone())) {
+            throw new ErrorMsgException("请输入注册手机号码");
+        }
+
+        if (StringUtils.isEmpty(bizuser.getPassword())) {
+            throw new ErrorMsgException("请输入密码");
+        }
+        if (bizuser.getPassword().length() > 16) {
+            throw new ErrorMsgException("密码长度不能超过16位！");
+        }
+        if (StringUtils.isEmpty(bizuser.getCode())) {
+            throw new ErrorMsgException("请输入有效的验证码");
+        }
+        Integer code = redisCache.get(bizuser.getPhone() + Constants.REGISTER_VERVIFY_CODE, Integer.class);
+        if (code == null) {
+            throw new ErrorMsgException("验证码失效，请重新获取");
+        }
+        if (!String.valueOf(code).equals(bizuser.getCode())) {
+            throw new ErrorMsgException("验证码错误，请重新尝试");
+        }
+        bizuser.setId(IdKit.getUniversalId());
+
+        bizuser.setSource(StringUtils.isEmpty(bizParamBean.getModel()) ? 0 : Model.valueOf(bizParamBean.getModel()).getId());
+        String md5Hex = DigestUtils.md5Hex(DigestUtils.shaHex(bizuser.getPassword()));
+        bizuser.setPassword(md5Hex);
+        String syn = Constants.USER_REGISTER_SYN + bizuser.getPhone();
+        Lock lock = new RedisLock(syn, 8000L);
+        try {
+            lock.tryLock(8, TimeUnit.SECONDS);
+            // 再次校验该注册用户是否已经是会员
+            BizUserExample example = new BizUserExample();
+            example.createCriteria().andPhoneEqualTo(bizuser.getPhone());
+            List<BizUser> list = bizUserMapper.selectByExample(example);
+            if (!list.isEmpty()) {
+                throw new ErrorMsgException("此用户已注册会员，可直接登录");
+            }
+            if (bizUserMapper.insertSelective(bizuser) > 0) {
+                redisCache.remove(bizuser.getPhone() + Constants.REGISTER_VERVIFY_CODE);
+                return new ResultBean("用户注册成功!");
+            }
+        } finally {
+            lock.unLock();
+        }
+        throw new ErrorMsgException("注册失败,请稍后重试!");
+    }
 
     @Override
     public ResultBean queryUserInfo(BizParamBean bizParamBean) throws Exception {

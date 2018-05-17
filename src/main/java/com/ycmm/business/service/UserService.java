@@ -11,6 +11,12 @@ import com.ycmm.model.BizUser;
  */
 @UserLoginCheck
 public interface UserService {
+
+    /**
+     * 用户注册接口
+     */
+    public ResultBean registerUser(BizParamBean bizParamBean) throws Exception;
+
 	/**
 	 * 用户修改密码
 	 */

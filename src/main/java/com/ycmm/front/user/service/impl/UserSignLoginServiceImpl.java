@@ -43,7 +43,6 @@ public class UserSignLoginServiceImpl implements UserSignLoginService {
                 throw new ErrorMsgException("当前用户密码不存在，不可登陆");
             }
             String md5Hex = DigestUtils.md5Hex(DigestUtils.sha1Hex(passWord));
-            //123456 加密后的字符串
             if (!bizUser.getPassword().equals(md5Hex)) {
                 throw new ErrorMsgException("用户名或密码错误，请重新登录");
             }

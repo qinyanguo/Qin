@@ -6,7 +6,15 @@ import java.io.Serializable;
 public class BizUser implements Serializable {
 
     @Transient
-    private String newPassword;
+    private String newPassword, code;
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
 
     public String getNewPassword() {
         return newPassword;

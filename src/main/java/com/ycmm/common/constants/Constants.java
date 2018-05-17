@@ -26,6 +26,23 @@ public class Constants {
 	 * 短信服务平台运营商
 	 */
 	public static final String SMS_SERVICER_PROVIDER =  PropertyUtils.getProperty("sms_service_provider");
+    /**
+     * 用户注册锁
+     */
+    public static final String USER_REGISTER_SYN = "_USER_REGISTER_SYN_";
+    /**
+     * 注册 验证码
+     */
+    public static final String REGISTER_VERVIFY_CODE = "_REGISTER_VERVIFY_CODE";
+
+    /**
+     * 登录 验证码
+     */
+    public static final String LOGIN_VERVIFY_CODE = "_LOGIN_VERVIFY_CODE";
+    /**
+     * 重置 密码
+     */
+    public static final String REPWD_VERVIFY_CODE = "_REPWD_VERVIFY_CODE";
 	
 	
 	
