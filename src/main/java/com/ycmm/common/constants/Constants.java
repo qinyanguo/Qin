@@ -17,6 +17,11 @@ public class Constants {
 	public static final String LOGGER_ERROR_EH_CACHE  = "【========= EhCache 缓存异常 =========】";
 	
 	public static final String LOGGER_ERROR_REDIS_CACHE  = "【========= Redis 缓存异常 =========】";
+
+    /**
+     * 客服电话
+     */
+    public static final String SERVICE_MOBILE = PropertyUtils.getProperty("service_mobile");
 	
 	/**
 	 * 执行日志记录形式

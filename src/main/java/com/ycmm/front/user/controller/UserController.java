@@ -6,10 +6,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import com.alibaba.dubbo.rpc.RpcException;
 import com.ycmm.base.bean.BizParamBean;
 import com.ycmm.base.bean.FrontParamBean;
 import com.ycmm.base.bean.ResultBean;
 import com.ycmm.base.exceptions.base.ErrorMsgException;
+import com.ycmm.base.exceptions.enums.ErrorMsgEnum;
 import com.ycmm.common.cache.CacheService;
 import com.ycmm.common.constants.Constants;
 import com.ycmm.common.tools.CommonUtils;
@@ -18,6 +20,7 @@ import com.ycmm.front.user.service.UserSignLoginService;
 import net.sf.json.JSONObject;
 
 import org.apache.commons.lang.StringUtils;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -29,6 +32,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("account")
 public class UserController {
+
+    private static Logger logger = Logger.getLogger(UserController.class);
 
     @Autowired
     UserSignLoginService userSignLoginService;
@@ -61,8 +66,17 @@ public class UserController {
             bizParamBean.setIp(WebUtils.getNginxAddress(request));
             bizParamBean.setModel(CommonUtils.getModel(request));
             resultBean = userSignLoginService.signLogin(bizParamBean);
-        } catch (Exception e) {
-            e.printStackTrace();
+            if(!"1c01".equals(resultBean.getCode())){
+                return resultBean;
+            }
+//            JSONObject token = createToken(resultBean.getBiz_result(), request, frontParamBean.getDev());
+            JSONObject jsonSession = createToken(resultBean.getBiz_result(), request, frontParamBean.getDev());
+            return new ResultBean(jsonSession);
+        }catch (RpcException e){
+
+        }catch (Exception e) {
+            logger.error("【===== 用户登录异常 =====】--->phone:" + biz_param.optString("phone"), e);
+            resultBean = new ResultBean(ErrorMsgEnum.ERROR_ALERT, "用户登录异常，请稍候重新尝试");
         }
 
 
