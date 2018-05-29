@@ -71,6 +71,8 @@ public interface CacheService {
 	 * 删除全部数据
 	 */
     public void removeAll();
+
+    public Long incr(String key);
 	
 }
 

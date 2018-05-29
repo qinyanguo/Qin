@@ -1,6 +1,8 @@
 package com.ycmm.common.interceptor;
 
+import com.ycmm.base.exceptions.base.ErrorMsgException;
 import com.ycmm.base.system.RequestLimit;
+import com.ycmm.common.cache.CacheService;
 import com.ycmm.common.cache.impl.RedisCacheImpl;
 import com.ycmm.common.utils.WebUtils;
 import org.apache.log4j.Logger;
@@ -8,6 +10,7 @@ import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
@@ -24,7 +27,8 @@ public class RequestLimitAspect {
     private static final Logger logger = Logger.getLogger(RequestLimit.class);
 
     @Autowired
-    RedisCacheImpl redisCache;
+    @Qualifier("redisCache")
+    private CacheService redisCache;
 
     @Before("within(@org.springframework.stereotype.Controller *) && @annotation(requestLimit)")
     public void requestLimit(final JoinPoint joinPoint, RequestLimit requestLimit) throws Exception{
@@ -44,8 +48,14 @@ public class RequestLimitAspect {
         String ip = WebUtils.getNginxAddress(request);
         String url = request.getRequestURL().toString();
         String key = "req_limit".concat(url).concat(ip);
-        
-
+        Long count = redisCache.incr(key);
+        if (count <= 1) {
+            redisCache.set(key, "检测访问频率", requestLimit.time());
+        }
+        if (count > requestLimit.count()) {
+            logger.info("用户IP["+ ip + "]访问地址[" + url +"]超过了限制次数["+ requestLimit.count() +"]");
+            throw new ErrorMsgException("请求频率过快，请等待"+ requestLimit.time()/1000 +"秒再访问。");
+        }
 
     }
 }

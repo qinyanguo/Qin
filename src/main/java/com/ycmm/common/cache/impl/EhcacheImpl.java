@@ -135,7 +135,12 @@ public class EhcacheImpl implements CacheService {
 		
 	}
 
-	@Override
+    @Override
+    public Integer incr(String key) {
+        return null;
+    }
+
+    @Override
 	public <T> List<T> getList(String key, Class<T> clazz) {
 		return null;
 	}

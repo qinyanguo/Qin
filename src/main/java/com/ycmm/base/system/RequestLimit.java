@@ -29,4 +29,10 @@ public @interface RequestLimit {
      *
      */
     int time() default 60000;
+
+    /**
+     * 比如，每5分钟超过规定访问次数 就让 totalCount加 1，若totalCount 超过一定次数  说明是有意攻击，从而将ip拉黑
+     * @return
+     */
+    int totalCount() default 0;
 }

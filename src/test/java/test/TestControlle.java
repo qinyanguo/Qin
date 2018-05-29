@@ -12,7 +12,7 @@ public class TestControlle {
     private static String host = "http://127.0.0.1:8080/smile/yan";
 
     public static JSONObject demoTest(String module, String method, JSONObject biz_param) throws Exception {
-        ContextHolderUtils.getSession();
+
         long time = System.currentTimeMillis();
         JSONObject biz_paramLogin = new JSONObject();
         biz_paramLogin.put("id", "admin");

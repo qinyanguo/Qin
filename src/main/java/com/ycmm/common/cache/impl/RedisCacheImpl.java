@@ -25,21 +25,25 @@ public class RedisCacheImpl implements CacheService {
 	private StringRedisTemplate redisTemplate;
 	
 	public StringRedisTemplate getRedisTemplate() {
-		return redisTemplate;
+
+	    return redisTemplate;
 	}
 
 	public void setRedisTemplate(StringRedisTemplate redisTemplate) {
-		this.redisTemplate = redisTemplate;
+
+	    this.redisTemplate = redisTemplate;
 	}
 
 	@Override
 	public void set(String key, Object value) {
-		set(key, value, 0);
+
+	    set(key, value, 0);
 	}
 
 	@Override
 	public void set(String key, Object value, int expirationTime) {
-		set(key, value, 0, expirationTime);
+
+	    set(key, value, 0, expirationTime);
 	}
 
 	@Override
@@ -189,5 +193,18 @@ public class RedisCacheImpl implements CacheService {
 			}
 		}
 	}
+
+    @Override
+    public Long incr(String key) {
+	    RedisConnection conn = null;
+	    conn = redisTemplate.getConnectionFactory().getConnection();
+	    if (conn != null) {
+            Long incr = conn.incr(key.getBytes());
+            logger.info("key:--->" + key + "count:--->" + incr);
+            return incr;
+        }
+
+        return 0l;
+    }
 
 }
