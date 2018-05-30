@@ -50,11 +50,14 @@ public class RequestLimitAspect {
         String key = "req_limit".concat(url).concat(ip);
         Long count = redisCache.incr(key);
         if (count <= 1) {
-            redisCache.set(key, "检测访问频率", requestLimit.time());
+            redisCache.set(key, redisCache.get(key), requestLimit.time());
         }
         if (count > requestLimit.count()) {
             logger.info("用户IP["+ ip + "]访问地址[" + url +"]超过了限制次数["+ requestLimit.count() +"]");
-            throw new ErrorMsgException("请求频率过快，请等待"+ requestLimit.time()/1000 +"秒再访问。");
+//            发通知提醒
+//            throw new ErrorMsgException("请求频率过快，请等待"+ requestLimit.time()/1000 +"秒再访问。");
+            String attack = "attack_limit".concat(url).concat(ip);
+            Long attackCount = redisCache.incr(attack);
         }
 
     }

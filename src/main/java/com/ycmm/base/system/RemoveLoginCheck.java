@@ -42,6 +42,10 @@ import java.lang.annotation.Target;
  * 使用空字符串或0作为默认值是一种常用的做法。这个约束使得处理器很难表现一个元素的存在或缺失的状态，因为每个注解的声明中，
  * 所有元素都存在，并且都具有相应的值，为了绕开这个约束，我们只能定义一些特殊的值，
  * 例如空字符串或者负数，一次表示某个元素不存在，在定义注解时，这已经成为一个习惯用法。
+ *
+ * @Retention(RetentionPolicy.RUNTIME) ：这种类型的Annotations将被JVM保留,所以他们能在运行时被JVM或其他使用
+ * 反射机制的代码所读取和使用。此外RetentionPolicy.SOURCE —— 这种类型的Annotations只在源代码级别保留,编译时就
+ * 会被忽略；RetentionPolicy.CLASS —— 这种类型的Annotations编译时被保留,在class文件中存在,但JVM将会忽略
  */
 @Inherited
 @Target({ElementType.METHOD})

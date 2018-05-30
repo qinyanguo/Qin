@@ -63,4 +63,6 @@ public interface UserService {
 	 */
 	public ResultBean queryUserList(BizParamBean bizParamBean) throws Exception;
 
+	public ResultBean testRedis() throws Exception;
+
 }

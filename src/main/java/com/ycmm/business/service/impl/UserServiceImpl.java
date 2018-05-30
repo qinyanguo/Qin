@@ -317,4 +317,17 @@ public class UserServiceImpl implements UserService {
         return new ResultBean(json);
     }
 
+    @Override
+    public ResultBean testRedis() throws Exception {
+        Long count = redisCache.incr("111");
+        if (count <= 1) {
+            redisCache.set("111", redisCache.get("111"), 20);
+        }
+        if (count > 5) {
+            System.out.println(count);
+        }
+        return new ResultBean(count);
+    }
+
+
 }

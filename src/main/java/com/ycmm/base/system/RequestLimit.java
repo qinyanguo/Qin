@@ -7,6 +7,9 @@ import java.lang.annotation.*;
 
 /**
  * 允许访问的次数限制注解
+ * Order决定先执行哪个后执行哪个。如果不加Order则默认按照注解标注的先后顺序执行。
+ * @Order(Ordered.HIGHEST_PRECEDENCE)表示最高优先级。
+ * 比如 @Order(1)  @Order(2)，标注@Order(1)的就会先执行
  */
 @Documented
 @Order(Ordered.HIGHEST_PRECEDENCE)
@@ -26,9 +29,9 @@ public @interface RequestLimit {
      * 时间段，单位为毫秒，默认为 1分钟
      * 如果是防攻击，建议把 time设置大一点例如 1分钟20次
      * 如果想避免重复提交问题，建议 time设置小一点如 1秒1次
-     *
+     * 对 redis 默认为 秒
      */
-    int time() default 60000;
+    int time() default 60;
 
     /**
      * 比如，每5分钟超过规定访问次数 就让 totalCount加 1，若totalCount 超过一定次数  说明是有意攻击，从而将ip拉黑

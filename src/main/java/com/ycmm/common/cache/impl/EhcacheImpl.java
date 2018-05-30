@@ -136,7 +136,7 @@ public class EhcacheImpl implements CacheService {
 	}
 
     @Override
-    public Integer incr(String key) {
+    public Long incr(String key) {
         return null;
     }
 
