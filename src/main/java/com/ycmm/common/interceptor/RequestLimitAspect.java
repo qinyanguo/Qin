@@ -56,8 +56,19 @@ public class RequestLimitAspect {
             logger.info("用户IP["+ ip + "]访问地址[" + url +"]超过了限制次数["+ requestLimit.count() +"]");
 //            发通知提醒
 //            throw new ErrorMsgException("请求频率过快，请等待"+ requestLimit.time()/1000 +"秒再访问。");
-            String attack = "attack_limit".concat(url).concat(ip);
-            Long attackCount = redisCache.incr(attack);
+            String aggressKey = "attack_limit".concat(url).concat(ip);
+            Long attackCount = redisCache.incr(aggressKey);
+            if (attackCount <= 1) {
+                redisCache.set(aggressKey, redisCache.get(aggressKey), requestLimit.time() * 30);
+            }
+            //假如一分钟(requestLimit.time)内只允许请求 5 次，每当一分钟内访问次数大于 5 时记攻击次数加 1，
+            // 即使每分钟访问次数都大于 5，在 （requestLimit.time() * 30）30 分钟内最大攻击次数也就为 30，
+            // 所以如果 30 分钟内大于 20 次，意为恶意攻击，将其 ip 可拉黑一段时间
+            if (attackCount > (requestLimit.count() * 4)) {
+                //拉黑ip
+            }
+        }else {
+            //可以调用逻辑
         }
 
     }
