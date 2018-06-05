@@ -425,6 +425,16 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!--这个包的作用是持久化，具体的说就是在实体类中进行元数据标签的作用，是ORM框架中用到的。
+        ORM框架可以通过这个元数据标签，使得实体类与数据库中的表建立映射关系。
+        例如javax.persistence.Column标识实体类中的这个属性对应于数据库中的一个字段等等。-->
+      <!--  <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>javax.persistence</artifactId>
+            <version>2.1.1</version>
+        </dependency>-->
+
+
         <!--通用Mapper-->
         <!--<dependency>-->
             <!--<groupId>tk.mybatis</groupId>-->

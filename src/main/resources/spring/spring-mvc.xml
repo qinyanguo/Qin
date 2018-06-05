@@ -33,5 +33,5 @@
          proxy-target-class就是决定使用哪个实现方式的开关，当该值是false时，使用JDK的实现方式，这也是
          默认的实现方式，反之则使用cglib的实现方式。当我把该值设置为true时，也就是使用cglib
     -->
-    <aop:aspectj-autoproxy proxy-target-class="false"/>
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
 </beans>

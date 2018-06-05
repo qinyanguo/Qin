@@ -30,8 +30,21 @@ public class RequestLimitAspect {
     @Qualifier("redisCache")
     private CacheService redisCache;
 
+    /**
+     * @within：用于匹配所以持有指定注解类型内的方法；@annotation(limit) 是匹配含有limit注解的方法。
+     *
+     * @Before("within(@org.springframework.stereotype.Controller *) && @annotation(limit)")
+     *                  表示对含有SpringMVC的Controller注解下面的方法 且含有 注解limit的方法有效。
+     * jointPoint获取HttpServletRequest（被修饰的方法需要有HttpServletRequest参数）
+     * redis/Jedis不熟悉的只需要了解下两个方法就行:incr方法表示为key值加1，如果key不存在则新建一个key值，
+     * 并初始化为1。expire表示经过time时间后key会消失。
+     * 逻辑是某个Ip地址对某个接口url,在过期时间内如果超过规定的次数就会抛出访问频率过高的异常。
+     */
+
     @Before("within(@org.springframework.stereotype.Controller *) && @annotation(requestLimit)")
     public void requestLimit(final JoinPoint joinPoint, RequestLimit requestLimit) throws Exception{
+        //得到方法名
+        System.out.println(joinPoint.getSignature().getName());
         Object[] args = joinPoint.getArgs();
         HttpServletRequest request = null;
         for (int i = 0; i < args.length; i++) {
@@ -55,6 +68,7 @@ public class RequestLimitAspect {
         if (count > requestLimit.count()) {
             logger.info("用户IP["+ ip + "]访问地址[" + url +"]超过了限制次数["+ requestLimit.count() +"]");
 //            发通知提醒
+            System.err.println("提醒------->" + redisCache.get(key) + "次");
 //            throw new ErrorMsgException("请求频率过快，请等待"+ requestLimit.time()/1000 +"秒再访问。");
             String aggressKey = "attack_limit".concat(url).concat(ip);
             Long attackCount = redisCache.incr(aggressKey);
@@ -66,9 +80,11 @@ public class RequestLimitAspect {
             // 所以如果 30 分钟内大于 20 次，意为恶意攻击，将其 ip 可拉黑一段时间
             if (attackCount > (requestLimit.count() * 4)) {
                 //拉黑ip
+                System.err.println("拉黑了，哈哈哈哈哈哈");
             }
         }else {
             //可以调用逻辑
+            System.out.println("=======可以调用逻辑=====");
         }
 
     }

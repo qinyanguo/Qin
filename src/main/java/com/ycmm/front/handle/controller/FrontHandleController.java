@@ -3,6 +3,7 @@ package com.ycmm.front.handle.controller;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.ycmm.base.system.RequestLimit;
 import com.ycmm.business.service.EmployeeService;
 import com.ycmm.common.utils.ExportExcelUtils;
 import com.ycmm.model.BaseBizEmployee;
@@ -47,6 +48,7 @@ public class FrontHandleController {
      */
     @RequestMapping(value = "/control", method = RequestMethod.POST, consumes = "application/json")
     @ResponseBody
+    @RequestLimit(count = 2, time = 20, totalCount = 15)
     public ResultBean execute(HttpServletRequest request, @RequestBody() FrontParamBean frontParamBean) throws Exception{
         /**
          * 1.未禁用cookies ：
