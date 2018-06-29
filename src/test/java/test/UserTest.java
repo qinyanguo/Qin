@@ -26,4 +26,5 @@ public class UserTest extends BaseTest{
     public void getUser() throws Exception {
         userService.testRedis();
     }
+
 }

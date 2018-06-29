@@ -1,6 +1,7 @@
 package com.ycmm.model;
 
-import javax.persistence.Transient;
+import org.springframework.data.annotation.Transient;
+
 import java.io.Serializable;
 
 public class BizUser implements Serializable {

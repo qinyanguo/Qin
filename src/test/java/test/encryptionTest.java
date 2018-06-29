@@ -2,6 +2,7 @@ package test;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.digest.DigestUtils;
+import org.junit.Test;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -49,4 +50,6 @@ public class encryptionTest {
         }
         return buf.toString().toLowerCase();
     }
+
+
 }
