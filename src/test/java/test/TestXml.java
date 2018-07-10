@@ -21,7 +21,6 @@ public class TestXml {
 //        XmlPraser.dome4j();
 //    }
 
-
     private static String host = "http://127.0.0.1:8080/smile/weixin";
 
     public static JSONObject demoTest() throws Exception {
