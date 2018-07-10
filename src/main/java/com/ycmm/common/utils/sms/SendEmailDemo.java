@@ -161,7 +161,7 @@ public class SendEmailDemo {
 		
 		email.setHostName("smtp.163.com");
 		email.setSmtpPort(465);
-		email.setAuthenticator(new DefaultAuthenticator("qinyg24@163.com", "qin6719568"));
+		email.setAuthenticator(new DefaultAuthenticator("qinyg24@163.com", "xxxxxx"));
 		email.setSSLOnConnect(true);
 		email.setFrom("qinyg24@163.com", "秦");
 		email.setSubject("好消息");

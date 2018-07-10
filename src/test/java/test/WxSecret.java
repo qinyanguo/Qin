@@ -14,7 +14,7 @@ import org.bouncycastle.util.Arrays;
 
 
 
-public class Dsads {
+public class WxSecret {
 
 	public static void main(String[] args) throws Exception {
 		   String appId = "wx11948e15ebecf897";

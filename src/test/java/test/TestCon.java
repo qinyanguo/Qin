@@ -17,7 +17,7 @@ public class TestCon {
         JSONObject biz_paramLogin = new JSONObject();
         biz_paramLogin.put("id", "admin");
         biz_paramLogin.put("uid", "123456");
-        JSONObject httpPostJson = HttpClientUtils.httpPostJson(host + "/control.do", biz_paramLogin);
+        JSONObject httpPostJson = HttpClientUtils.httpPostJson(host + "/exportExcel222.do", biz_paramLogin);
         if (!httpPostJson.getJSONObject("result").getString("code").equals("1c01")) {
             System.out.println(httpPostJson.toString());
         }
