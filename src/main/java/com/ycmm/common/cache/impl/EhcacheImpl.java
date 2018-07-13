@@ -136,7 +136,7 @@ public class EhcacheImpl implements CacheService {
 	}
 
     @Override
-    public Long incr(String key) {
+    public String getValue(String key) {
         return null;
     }
 
@@ -150,4 +150,9 @@ public class EhcacheImpl implements CacheService {
 		return null;
 	}
 
+    @Override
+    public Long setIncr(String key, Object value, int timeToIdleSeconds, int expirationTime, Integer type) {
+
+	    return null;
+    }
 }

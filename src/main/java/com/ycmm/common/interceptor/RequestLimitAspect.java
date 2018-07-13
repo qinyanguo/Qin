@@ -1,5 +1,6 @@
 package com.ycmm.common.interceptor;
 
+import com.ycmm.base.bean.FrontParamBean;
 import com.ycmm.base.exceptions.base.ErrorMsgException;
 import com.ycmm.base.system.RequestLimit;
 import com.ycmm.common.cache.CacheService;
@@ -43,37 +44,54 @@ public class RequestLimitAspect {
 
     @Before("within(@org.springframework.stereotype.Controller *) && @annotation(requestLimit)")
     public void requestLimit(final JoinPoint joinPoint, RequestLimit requestLimit) throws Exception{
+
         //得到方法名
         System.out.println(joinPoint.getSignature().getName());
         Object[] args = joinPoint.getArgs();
+        for (Object arg : args) {
+            if (arg instanceof FrontParamBean) {
+                String uid = ((FrontParamBean) arg).getUid();
+                System.out.println(uid);
+            }
+        }
         HttpServletRequest request = null;
         for (int i = 0; i < args.length; i++) {
             Object o =  args[i];
-            if (o instanceof HttpServletRequest) {
+                if (o instanceof HttpServletRequest) {
                 request = (HttpServletRequest) o;
                 break;
             }
         }
-
         if (request == null) {
             return;
         }
+
+        //判断当前请求的用户是否在拉黑名单里
+
+//        redisCache.getValue("");
+
         String ip = WebUtils.getNginxAddress(request);
         String url = request.getRequestURL().toString();
-        String key = "req_limit".concat(url).concat(ip);
-        Long count = redisCache.incr(key);
-        if (count <= 1) {
-            redisCache.set(key, redisCache.get(key), requestLimit.time());
+//        String key = "表示正常访问的数字".concat("用户id").concat(ip.replace(".", ""));
+        String key = "111".concat("231").concat(ip.replace(".", ""));;
+
+        //incr的key存储的字符串类型不能表示为一个整数，那么执行这个命令时服务器会返回一个错误(eq:(error) ERR value is not an integer or out of range)。
+        //Long count = redisCache.incr(key);  此法报错
+        Long count =  redisCache.setIncr(key, "1", 0,requestLimit.time(), 1);
+        if (count < 1) {
+            count = redisCache.setIncr(key,  "1", 0, requestLimit.time(), 1);
         }
+
         if (count > requestLimit.count()) {
             logger.info("用户IP["+ ip + "]访问地址[" + url +"]超过了限制次数["+ requestLimit.count() +"]");
 //            发通知提醒
-            System.err.println("提醒------->" + redisCache.get(key) + "次");
+            System.err.println("提醒------->" + redisCache.getValue(key) + "次");
 //            throw new ErrorMsgException("请求频率过快，请等待"+ requestLimit.time()/1000 +"秒再访问。");
-            String aggressKey = "attack_limit".concat(url).concat(ip);
-            Long attackCount = redisCache.incr(aggressKey);
-            if (attackCount <= 1) {
-                redisCache.set(aggressKey, redisCache.get(aggressKey), requestLimit.time() * 30);
+//            String aggressKey = "表示正常访问的数字".concat("用户id").concat(ip.replace(".", ""));
+            String aggressKey = "222".concat("231").concat(ip.replace(".", ""));
+            Long attackCount =  redisCache.setIncr(aggressKey, "1", 0, requestLimit.time(), 2);
+            if (attackCount < 1) {
+                attackCount =  redisCache.setIncr(aggressKey, "1", 0, requestLimit.time(), 2);
             }
             //假如一分钟(requestLimit.time)内只允许请求 5 次，每当一分钟内访问次数大于 5 时记攻击次数加 1，
             // 即使每分钟访问次数都大于 5，在 （requestLimit.time() * 30）30 分钟内最大攻击次数也就为 30，

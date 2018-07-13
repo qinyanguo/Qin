@@ -1,8 +1,12 @@
 test\BaseTest.class
-test\TestService.class
+test\encryptionTest.class
 test\RDE.class
-test\Base64.class
+test\UserTest.class
+test\LimitTest.class
+test\WxSecret.class
 test\RequestTest.class
+test\TestCon.class
 test\TestExcel.class
 test\PatternMatcher.class
-test\TestControlle.class
+test\EmployeeTest.class
+test\TestXml.class

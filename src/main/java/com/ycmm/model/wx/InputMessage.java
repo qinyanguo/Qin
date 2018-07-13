@@ -16,9 +16,6 @@ import java.io.Serializable;
 @XStreamAlias("xml")
 public class InputMessage implements Serializable {
 
-    /**
-     *
-     */
     private static final long serialVersionUID = 1L;
     @XStreamAlias("ToUserName")
     private String ToUserName;

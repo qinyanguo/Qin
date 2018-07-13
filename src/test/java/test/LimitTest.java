@@ -32,14 +32,14 @@ public class LimitTest {
         String module = "equipment";
         String method = "deleteEquipment.do";
 
-        for (int i=0; i< 1; i++) {
-            if (i == 4) {
-                Thread.sleep(5000);
-            }
+//        for (int i=0; i< 1; i++) {
+//            if (i == 4) {
+//                Thread.sleep(5000);
+//            }
             JSONObject result = demoTest(module, method, biz_param);
             System.err.println(result);
             System.out.println((System.currentTimeMillis() - time));
-        }
+//        }
 
     }
 }

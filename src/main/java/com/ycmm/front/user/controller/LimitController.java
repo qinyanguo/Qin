@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  *
  */
@@ -17,8 +19,8 @@ public class LimitController {
 
     @ResponseBody
     @RequestMapping(value = "/limit")
-    @RequestLimit(count = 2, time = 20, totalCount = 15)
-    public void test(@RequestBody() FrontParamBean frontParamBean) {
+    @RequestLimit(count = 2, time = 120, totalCount = 15)
+    public void test(HttpServletRequest request, @RequestBody() FrontParamBean frontParamBean) {
         System.out.println(frontParamBean);
     }
 }

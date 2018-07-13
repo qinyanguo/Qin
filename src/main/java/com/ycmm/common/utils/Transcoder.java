@@ -75,7 +75,8 @@ public class Transcoder {
 		try {
 			if(in != null) {
 				/**
-				 * 创建一个 ByteArrayInputStream，使用 buf 作为其缓冲区数组。该缓冲区数组不是复制得到的。pos 的初始值是 0，count 的初始值是 buf 的长度。
+				 * 创建一个 ByteArrayInputStream，使用 buf 作为其缓冲区数组。该缓冲区数组不是复制得到的。
+                 * pos 的初始值是 0，count 的初始值是 buf 的长度。
 				 * 把XXX转变为字节数组in，并作为流输入的来源
 				 */
 				bis = new ByteArrayInputStream(in);

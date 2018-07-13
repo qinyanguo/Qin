@@ -5,16 +5,24 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
+import com.ycmm.common.utils.KryoTranscoder;
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 import org.springframework.data.redis.connection.RedisConnection;
+import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 
 import com.ycmm.common.cache.CacheService;
 import com.ycmm.base.exceptions.base.ErrorMsgException;
 import com.ycmm.common.constants.Constants;
 import com.ycmm.common.utils.Transcoder;
+import org.springframework.data.redis.serializer.GenericToStringSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
+import org.springframework.data.redis.support.atomic.RedisAtomicInteger;
+import org.springframework.data.redis.support.atomic.RedisAtomicLong;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -52,7 +60,8 @@ public class RedisCacheImpl implements CacheService {
 		try {
 			conn = redisTemplate.getConnectionFactory().getConnection();
 			if(!conn.isClosed() && value != null) {
-				conn.set(key.getBytes(), Transcoder.serialize(value));
+				conn.set(key.getBytes(), KryoTranscoder.serialize(value));
+//				conn.set(key.getBytes(), Transcoder.serialize(value));
 				if(expirationTime > 0) {
 					conn.expire(key.getBytes(), expirationTime);
 				}
@@ -73,13 +82,15 @@ public class RedisCacheImpl implements CacheService {
 			Object obj = null;
 			conn = redisTemplate.getConnectionFactory().getConnection();
 			if(StringUtils.isNotEmpty(key) && !conn.isClosed()) {
-				byte[] in = conn.get(key.getBytes());
+                byte[] in = conn.get(key.getBytes());
 				if(in != null && in.length > 0) {
-					obj= Transcoder.deserialize(in);
+					obj= KryoTranscoder.deserialize(in);
+//					obj= Transcoder.deserialize(in);
 				}
 			}
 			return obj;
 		} catch (Exception e) {
+		    e.printStackTrace();
 			logger.error(Constants.LOGGER_ERROR_REDIS_CACHE, e);
 		} finally {
 			if(conn != null) {
@@ -103,7 +114,8 @@ public class RedisCacheImpl implements CacheService {
 				throw new ErrorMsgException(" 缓存类型不匹配  redis cache class != Class<T> clazz");
 			}
 		} catch (Exception e) {
-			logger.error(Constants.LOGGER_ERROR_REDIS_CACHE, e);
+		    e.printStackTrace();
+//			logger.error(Constants.LOGGER_ERROR_REDIS_CACHE, e);
 		}
 		return null;
 	}
@@ -155,7 +167,8 @@ public class RedisCacheImpl implements CacheService {
 			}
 
 		} catch (Exception e) {
-			logger.error(Constants.LOGGER_ERROR_REDIS_CACHE, e);
+		    e.printStackTrace();
+//			logger.error(Constants.LOGGER_ERROR_REDIS_CACHE, e);
 		}
 		return null;
 	}
@@ -170,6 +183,7 @@ public class RedisCacheImpl implements CacheService {
 				conn.del(key.getBytes());
 			}
 		} catch (Exception e) {
+		    e.printStackTrace();
 			logger.error(Constants.LOGGER_ERROR_REDIS_CACHE, e);
 		} finally {
 			if (conn != null) {
@@ -195,16 +209,58 @@ public class RedisCacheImpl implements CacheService {
 	}
 
     @Override
-    public Long incr(String key) {
-	    RedisConnection conn = null;
-	    conn = redisTemplate.getConnectionFactory().getConnection();
-	    if (conn != null) {
-            Long incr = conn.incr(key.getBytes());
-            logger.info("key:--->" + key + "count:--->" + incr);
-            return incr;
-        }
+    public String getValue(String key) {
+	    try {
 
-        return 0l;
+            String s1 = String.valueOf(redisTemplate.opsForValue().get(key));
+            return s1;
+        }catch (Exception e) {
+	        e.printStackTrace();
+        }
+        return null;
     }
 
+    /**
+     * 使用自增方法的一些注意事项，序列化方式不对不能进行自增运算 。查看博客   https://blog.csdn.net/tyyh08/article/details/80267261
+     * 报错信息：redis.clients.jedis.exceptions.JedisDataException: ERR value is not an integer or out of range
+     * @param key
+     * @param value
+     * @param timeToIdleSeconds
+     * @param expirationTime
+     * @return
+     */
+
+    @Override
+    public Long setIncr(String key, Object value, int timeToIdleSeconds, int expirationTime, Integer type) {
+
+        redisTemplate.setKeySerializer(new StringRedisSerializer());
+        redisTemplate.setValueSerializer(new GenericToStringSerializer<Long>(Long.class));
+        redisTemplate.setExposeConnection(true);
+        redisTemplate.setConnectionFactory(redisTemplate.getConnectionFactory());
+        redisTemplate.afterPropertiesSet();
+
+        Long increment = redisTemplate.opsForValue().increment(key, Integer.valueOf(value.toString()));
+        if (increment <= 1 && type == 1) {
+            redisTemplate.opsForValue().set(key, increment.toString(), expirationTime, TimeUnit.SECONDS);
+        }
+//        String s1 = String.valueOf(redisTemplate.opsForValue().get(key));
+        return increment;
+//	    RedisConnection conn = null;
+//	    try {
+//
+//
+//            RedisConnectionFactory connectionFactory = redisTemplate.getConnectionFactory();
+//            conn = connectionFactory.getConnection();
+//            if (value != null && !conn.isClosed()) {
+//                System.out.println(key.getBytes());
+//                conn.set(key.getBytes(), value.toString().getBytes());
+//                if (expirationTime > 0) {
+//                    conn.expire(key.getBytes(), expirationTime);
+//                }
+//            }
+//        }catch (Exception e) {
+//	        logger.error("原子性自增失败"+ e);
+//        }
+
+    }
 }

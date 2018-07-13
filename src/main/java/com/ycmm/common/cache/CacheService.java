@@ -72,7 +72,16 @@ public interface CacheService {
 	 */
     public void removeAll();
 
-    public Long incr(String key);
+    /**
+     *
+     * @param key
+     * @param value
+     * @param timeToIdleSeconds
+     * @param expirationTime
+     */
+    public Long setIncr(String key, Object value, int timeToIdleSeconds, int expirationTime, Integer type);
+
+    public String getValue(String key);
 	
 }
 

@@ -319,10 +319,12 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public ResultBean testRedis() throws Exception {
-        Long count = redisCache.incr("111");
-        if (count <= 1) {
-            redisCache.set("111", redisCache.get("111"), 20);
+        Long count =  redisCache.setIncr("111", "1", 0,10, 1);
+        if (count < 1) {
+            count = redisCache.setIncr("111", "1", 0,10, 1);
         }
+        Object o = redisCache.getValue("111");
+        System.out.println(o);
         if (count > 5) {
             System.out.println(count);
         }

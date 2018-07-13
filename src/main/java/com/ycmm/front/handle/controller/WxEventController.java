@@ -18,6 +18,19 @@ import java.io.InputStream;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * 微博地址：https://blog.csdn.net/u014703502/article/details/54911554
+ * 第一步：
+ *    用户同意上报地理位置后，每次进入公众号会话时，都会在进入时上报地理位置，或在进入会话后每5秒上报一次地理位置，
+ *    公众号可以在公众平台网站中修改以上设置。上报地理位置时，微信会将上报地理位置事件推送到开发者填写的URL。
+ *    这里填写的url，如图
+ *    url填写为自己服务器的域名 如：http://www.xxxx.com/weixin/chat
+ *    /weixin/chat  是下面wxEventController ,推送的链接。
+ *    Token(令牌) ： 随意
+ *    EncodingAESKey :随机生成就可以
+ * 第二步：创建自己的controller,并解析 微信返回xml数据包
+ */
+
 @Controller
 @RequestMapping("/weixin")
 public class WxEventController {
@@ -56,12 +69,6 @@ public class WxEventController {
 
     /**
      * 验证URL真实性
-     *
-     * @author morning
-     * @date 2015年2月17日 上午10:53:07
-     * @param request
-     * @param response
-     * @return String
      */
 //    private String access(HttpServletRequest request, HttpServletResponse response) {
 //        // 验证URL真实性
@@ -99,6 +106,9 @@ public class WxEventController {
     private void acceptMessage(HttpServletRequest request, HttpServletResponse response) throws IOException {
         // 处理接收消息
 //        ServletInputStream in = request.getInputStream();
+        /**
+         * 这里测试用下边，现获取的为本地文件流，正式可直接用上边，直接获取文件输入流
+         */
         InputStream in = new FileInputStream(new File("C:/Users/jishubu/Downloads/books.xml"));
         // 将POST流转换为XStream对象
         XStream xs = SerializeXmlUtil.createXstream();
@@ -122,8 +132,10 @@ public class WxEventController {
 
         // 取得消息类型
         String msgType = inputMsg.getMsgType();
-        // 根据消息类型获取对应的消息内容
-//        if (msgType.equals(MsgType.Text.toString())) {
+        /**
+         * 根据消息类型获取对应的消息内容，现只举个别类型实例
+         */
+        if (msgType.equals(MsgType.Text.toString())) {
             // 文本消息
             System.out.println("开发者微信号：" + inputMsg.getToUserName());
             System.out.println("发送方帐号：" + inputMsg.getFromUserName());
@@ -141,9 +153,9 @@ public class WxEventController {
             str.append("</xml>");
             System.out.println(str.toString());
             response.getWriter().write(str.toString());
-//        }
+        }
         // 获取并返回多图片消息
-//        if (msgType.equals(MsgType.Image.toString())) {
+        if (msgType.equals(MsgType.Image.toString())) {
             System.out.println("获取多媒体信息");
             System.out.println("多媒体文件id：" + inputMsg.getMediaId());
             System.out.println("图片链接：" + inputMsg.getPicUrl());
@@ -160,7 +172,7 @@ public class WxEventController {
             System.out.println("xml转换：/n" + xs.toXML(outputMsg));
             response.getWriter().write(xs.toXML(outputMsg));
 
-//        }
+        }
     }
 
 }

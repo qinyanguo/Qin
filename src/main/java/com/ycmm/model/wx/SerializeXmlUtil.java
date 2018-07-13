@@ -12,8 +12,6 @@ import java.lang.reflect.Field;
 
 /**
  * xml 转换工具类
- *
- * @date 2015年2月16日 下午2:42:50
  */
 public class SerializeXmlUtil {
 
