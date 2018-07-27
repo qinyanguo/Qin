@@ -20,7 +20,7 @@ public class EmployeeTest extends BaseTest{
         employService = getBean(EmployeeService.class);
     }
 
-//    @Test
+    @Test
     public void getEmployee() throws Exception {
         BaseBizEmployee baseBizEmployee = new BaseBizEmployee();
         baseBizEmployee.setId(100000);
