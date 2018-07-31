@@ -2,7 +2,9 @@ package com.ycmm.common.interceptor;
 
 import net.sf.json.JSONObject;
 import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -17,6 +19,7 @@ import javax.servlet.http.HttpServletResponse;
  * 只不过这里需要类型转换把Object转换成相应的type。
  */
 @Aspect
+@Component
 public class InOutCollectionUtilAspect {
 
     @Pointcut("@annotation(org.springframework.web.bind.annotation.RequestMapping)")
@@ -24,11 +27,16 @@ public class InOutCollectionUtilAspect {
 
     }
 
-    @Pointcut("@annotation(org.springframework.web.bind.annotation.RequestBody)")
+    @Pointcut("@annotation(org.springframework.web.bind.annotation.ResponseBody)")
     private void responseBodyMethod() {
 
     }
 
+    /**
+     * Before
+     * 在核心业务执行前执行，不能阻止核心业务的调用。
+     * @param joinPoint
+     */
     @Before(value = "requestMappingMethod() && responseBodyMethod()")
     public JSONObject beforeCollection(JoinPoint joinPoint) {
         System.out.println("--------beforeCollection().invoke--------");
@@ -38,6 +46,33 @@ public class InOutCollectionUtilAspect {
         return null;
     }
 
+
+    /**
+     * Around
+     * 手动控制调用核心业务逻辑，以及调用前和调用后的处理,
+     *
+     * 注意：当核心业务抛异常后，立即退出，转向AfterAdvice
+     * 执行完AfterAdvice，再转到ThrowingAdvice
+     * @param pjp
+     * @return
+     * @throws Throwable
+     */
+//    @Around(value = "requestMappingMethod() && responseBodyMethod()")
+//    public Object aroundAdvice(ProceedingJoinPoint pjp) throws Throwable {
+//        System.out.println("-----aroundAdvice().invoke-----");
+//        System.out.println(" 此处可以做类似于Before Advice的事情");
+//
+//        //调用核心逻辑
+//        Object retVal = pjp.proceed();
+//        System.out.println(" 此处可以做类似于After Advice的事情");
+//        System.out.println("-----End of aroundAdvice()------");
+//        return retVal;
+//    }
+
+    /**
+     * AfterReturning
+     * 核心业务逻辑调用正常退出后，不管是否有返回值，正常退出后，均执行此Advice
+     */
     @AfterReturning(value = "requestMappingMethod() && responseBodyMethod()", returning = "response")
     public JSONObject afterReturningCollection(JoinPoint joinPoint, HttpServletResponse response) {
         System.out.println("--------afterReturningCollection().invoke--------");
@@ -48,6 +83,11 @@ public class InOutCollectionUtilAspect {
         return null;
     }
 
+    /**
+     * 核心业务逻辑调用异常退出后，执行此Advice，处理错误信息
+     *
+     * 注意：执行顺序在Around Advice之后
+     */
     @AfterThrowing(value = "requestMappingMethod() && responseBodyMethod()", throwing = "ex")
     public void afterThrowingCollection(JoinPoint joinPoint, Exception ex) {
         System.out.println("--------afterThrowingCollection().invoke--------");

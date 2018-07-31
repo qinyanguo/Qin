@@ -57,12 +57,11 @@
 	    <property name="sqlSessionFactoryBeanName" value="v3SqlSessionFactory"/>
 	</bean>
 
-
-
     <!--<bean class="tk.mybatis.spring.mapper.MapperScannerConfigurer">-->
         <!--<property name="basePackage" value="com.ycmm.business.*"/>-->
         <!--<property name="markerInterface" value="tk.mybatis.mapper.common.Mapper"/>-->
     <!--</bean>-->
+
 </beans>
 
 

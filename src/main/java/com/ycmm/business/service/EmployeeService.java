@@ -53,8 +53,7 @@ public interface EmployeeService {
 	 */
 	public ResultBean updatePassword(BizParamBean bizParamBean) throws Exception;
 
-
-	public int update(BaseBizEmployee employee) throws Exception;
+    public int update(BaseBizEmployee employee) throws Exception;
 
 
 

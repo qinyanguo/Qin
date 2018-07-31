@@ -4,7 +4,9 @@ package com.ycmm.base.spring;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 public class ContextHolderUtils {
@@ -16,6 +18,12 @@ public class ContextHolderUtils {
         HttpServletRequest request =  ((ServletRequestAttributes)RequestContextHolder.getRequestAttributes()).getRequest();
         return request;
     }
+
+    public static HttpServletResponse getResponse() {
+        HttpServletResponse response = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getResponse();
+        return response;
+    }
+
 
     public static HttpSession getSession() {
         return getRequest().getSession();

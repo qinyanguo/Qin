@@ -131,7 +131,6 @@ public class RedisLock extends AbstractLock{
 				
 			}
 		}
-		
 		return false;
 	}
 	

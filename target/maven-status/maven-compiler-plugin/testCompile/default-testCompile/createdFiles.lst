@@ -1,12 +1,12 @@
 test\BaseTest.class
 test\encryptionTest.class
 test\RDE.class
-test\UserTest.class
-test\LimitTest.class
 test\WxSecret.class
 test\RequestTest.class
 test\TestCon.class
+test\TestXml.class
+test\UserTest.class
+test\LimitTest.class
 test\TestExcel.class
 test\PatternMatcher.class
 test\EmployeeTest.class
-test\TestXml.class
