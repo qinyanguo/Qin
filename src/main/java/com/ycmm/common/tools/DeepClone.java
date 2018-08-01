@@ -25,13 +25,13 @@ public class DeepClone {
     public static Object deepCopy(Object obj) {
         try {
             //创建一个新的 byte 数组输出流。  此类实现了一个输出流，其中的数据被写入一个 byte 数组。缓冲区会随着数据的不断写入而自动增长。
-            // 可使用 toByteArray() 和 toString() 获取数据。关闭 ByteArrayOutputStream 无效。此类中的方法在关闭此流后仍可被调用，
+            // 可f使用 toByteArray() 和 toString() 获取数据。关闭 ByteArrayOutputStream 无效。此类中的方法在关闭此流后仍可被调用，
             // 而不会产生任何 IOException。
             ByteArrayOutputStream byteOut = new ByteArrayOutputStream();
             //将指定的对象写入 ObjectOutputStream
             ObjectOutputStream objOut = new ObjectOutputStream(byteOut);
             objOut.writeObject(obj);
-
+            // 包含一个内部缓冲区，该缓冲区包含从流中读取的字节。创建一个 ByteArrayInputStream，使用 buf 作为其缓冲区数组。
             ByteArrayInputStream byteIn = new ByteArrayInputStream(byteOut.toByteArray());
             ObjectInputStream objIn = new ObjectInputStream(byteIn);
             return objIn.readObject();
