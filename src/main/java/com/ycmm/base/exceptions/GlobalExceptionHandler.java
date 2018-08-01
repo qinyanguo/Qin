@@ -23,6 +23,8 @@ import com.ycmm.base.bean.ResultBean;
 import com.ycmm.common.utils.WebUtils;
 
 /**
+ * 此处可拦截 web项目 异常， 对于dubbo分布式项目，只有一个总入口 front-v2，像 用户（biz-user）意向（biz-intention）等
+ * 为 jar 项目，可在 web 项目中写一个 ExceptionHandler，在其他 jar 项目中可统一配置 aop 异常拦截
  * 在Controller中抛出的异常，当没有被catch处理时，GlobalExceptionHandler中定义的处理方法可以起作用，
  * 在方法写明注解@ExceptionHandler，并注明其异常类即可。此种方法不仅可以作用于Controller，同样的在DAO层、
  * service层也可，都可以由GlobalExceptionHandler进行处理。此种写法减少代码的入侵，值得推荐。

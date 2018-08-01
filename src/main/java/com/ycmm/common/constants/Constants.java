@@ -27,7 +27,11 @@ public class Constants {
 	 * 执行日志记录形式
 	 */
 	public static final String LOGGER_INFO_FORMAT = "[PV]{[0]}{[1]}{[2]}{[3]}";
-	/**
+    /**
+     * 错误日志记录
+     */
+    public static final String LOGGER_ERROR_FORMAT = "[ER]{[0]}{[1]}{[2]}{[3]}{[4]}{[5]}{[6]}";
+    /**
 	 * 短信服务平台运营商
 	 */
 	public static final String SMS_SERVICER_PROVIDER =  PropertyUtils.getProperty("sms_service_provider");
