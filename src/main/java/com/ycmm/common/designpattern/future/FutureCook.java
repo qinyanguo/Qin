@@ -8,6 +8,7 @@ import java.util.concurrent.FutureTask;
  * @Author Oliver.qin
  * @Date 2018/8/1 15:06
  * @Description:
+ * https://www.cnblogs.com/cz123/p/7693064.html
  */
 
 public class FutureCook {
@@ -52,7 +53,13 @@ public class FutureCook {
             System.out.println("厨具还没到，先吃个冰淇淋等着（如果心情不好就调用 cancel 方法取消订单，就取消了哈哈哈）");
         }
 
-        //仅在计算完成时才能获取结果；如果计算尚未完成，则阻塞 get 方法。
+       /**
+        *  仅在计算完成时才能获取结果；如果计算尚未完成，则阻塞 get 方法。
+        *  get方法：获取计算结果（如果还没计算完，也是必须等待的）
+        *  cancel方法：还没计算完，可以取消计算过程
+        *  isDone方法：判断是否计算完
+        *  isCancelled方法：判断计算是否被取消
+        */
         KitchenWare kitchenWare = futureTask.get();
         System.out.println("第三步：厨具已到位，食材早备好，准备");
         Thread.sleep(2000); //洗刷厨具

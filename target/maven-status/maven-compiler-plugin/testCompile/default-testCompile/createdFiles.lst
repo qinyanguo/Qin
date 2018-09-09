@@ -1,6 +1,7 @@
 test\BaseTest.class
 test\encryptionTest.class
 test\RDE.class
+test\HolidayUtil.class
 test\WxSecret.class
 test\RequestTest.class
 test\TestCon.class

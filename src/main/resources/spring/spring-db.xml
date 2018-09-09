@@ -62,6 +62,37 @@
         <!--<property name="markerInterface" value="tk.mybatis.mapper.common.Mapper"/>-->
     <!--</bean>-->
 
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <!-- 控制数据源 -->
+        <property name="dataSource" ref="dataSource"/>
+        <!-- 当提交事务失败的时候是否回滚 -->
+        <property name="rollbackOnCommitFailure" value="true"/>
+    </bean>
+
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="x" propagation="REQUIRED" read-only="false" rollback-for="java.lang.RuntimeException"/>
+            <tx:method name="*" propagation="SUPPORTS"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <aop:config>
+        <aop:pointcut id="transactionPointcut" expression="execution(public * com.ycmm.business.service.*(..))
+             || execution(public * com.ycmm.common.designpattern.proxy.*.*(..))))"></aop:pointcut>
+    </aop:config>
+
+    <!-- jdk代理对象 -->
+    <!--<bean id="performanceHandlerProxy" class="com.ycmm.common.designpattern.proxy.jdk.PerformanceHandlerProxy">
+        &lt;!&ndash; 通过bean注入属性值 &ndash;&gt;
+        <property name="target">
+            <bean class="com.ycmm.common.designpattern.proxy.jdk.SellerServiceImpl"></bean>
+        </property>
+    </bean>-->
+
+    <!-- cglib动态代理 -->
+    <bean id="cglibHandlerProxy" class="com.ycmm.common.designpattern.proxy.cglib.CglibHandlerProxy"></bean>
+
+
 </beans>
 
 

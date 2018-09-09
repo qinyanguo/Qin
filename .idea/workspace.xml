@@ -10,13 +10,29 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/ycmm/MyGenerator.java" line="21" />
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/XmlPraser.java" line="47" />
     <bookmark url="file://$PROJECT_DIR$/src/test/java/test/HolidayUtil.java" line="126" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/PerformanceHandlerProxy.java" line="24" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3371d87-e400-4422-8c97-3b3665e292a9" name="Default" comment="深克隆  以及 对象转换">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/future/FutureCook.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+    <list default="true" id="a3371d87-e400-4422-8c97-3b3665e292a9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/CglibHandlerProxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/CglibTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/Seller.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/JdkTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/MethodPerformance.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/PerformanceHandlerProxy.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/PerformanceMonitor.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/SellerService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/SellerServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/test/MethodTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/qin.war" afterPath="$PROJECT_DIR$/target/qin.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/common/tools/DeepClone.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/tools/DeepClone.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/future/FutureCook.java" afterPath="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/future/FutureCook.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-db.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-db.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/test/HolidayUtil.java" afterPath="$PROJECT_DIR$/src/test/java/test/HolidayUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,92 +61,142 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <file leaf-file-name="Transactional.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/annotation/Transactional.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DeepClone.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/tools/DeepClone.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="593">
-              <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+            <state relative-caret-position="136">
+              <caret line="147" column="7" lean-forward="false" selection-start-line="147" selection-start-column="7" selection-end-line="147" selection-end-column="7" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#7847#0" expanded="false" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JSON.java" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Maven_Jar/com/alibaba/fastjson/1.2.34-RC1/fastjson-1.2.34-RC1-sources.jar!/com/alibaba/fastjson/JSON.java">
+      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Maven_Jar/org/mybatis/mybatis/3.4.2/mybatis-3.4.2-sources.jar!/org/apache/ibatis/transaction/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-89">
-              <caret line="233" column="0" lean-forward="true" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
+            <state relative-caret-position="242">
+              <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding>
-                <element signature="e#17198#17199#0" expanded="true" />
-                <element signature="e#17261#17262#0" expanded="true" />
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/business/service/impl/EmployeeServiceImpl.java">
+      <file leaf-file-name="JdbcTransaction.java" pinned="false" current-in-tab="true">
+        <entry file="jar://D:/Maven_Jar/org/mybatis/mybatis/3.4.2/mybatis-3.4.2-sources.jar!/org/apache/ibatis/transaction/jdbc/JdbcTransaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+            <state relative-caret-position="163">
+              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FutureCook.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/future/FutureCook.java">
+      <file leaf-file-name="Propagation.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/annotation/Propagation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+            <state relative-caret-position="484">
+              <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1878#1879#0" expanded="true" />
-                <element signature="e#1936#1937#0" expanded="true" />
+                <element signature="e#0#4501#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/business/service/UserService.java">
+      <file leaf-file-name="Isolation.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/annotation/Isolation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GlobalExceptionHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/GlobalExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ExceptionHandler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/ExceptionHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="67" />
+            <state relative-caret-position="484">
+              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#0#3402#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TransactionDefinition.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/TransactionDefinition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4356">
+              <caret line="212" column="7" lean-forward="false" selection-start-line="212" selection-start-column="7" selection-end-line="212" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#12072#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MethodTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/test/MethodTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FrontHandleController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/controller/FrontHandleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1496">
+              <caret line="90" column="76" lean-forward="false" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/FileUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1606">
+              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultTransactionDefinition.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/DefaultTransactionDefinition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#9076#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3412#3413#0" expanded="false" />
+                <element signature="e#3465#3466#0" expanded="false" />
+                <element signature="e#4861#4862#0" expanded="false" />
+                <element signature="e#4899#4900#0" expanded="false" />
+                <element signature="e#6213#6214#0" expanded="false" />
+                <element signature="e#6246#6247#0" expanded="false" />
+                <element signature="e#6626#6627#0" expanded="false" />
+                <element signature="e#6652#6653#0" expanded="false" />
+                <element signature="e#6792#6793#0" expanded="false" />
+                <element signature="e#6823#6824#0" expanded="false" />
+                <element signature="e#6872#6873#0" expanded="false" />
+                <element signature="e#6899#6900#0" expanded="false" />
+                <element signature="e#7135#7136#0" expanded="false" />
+                <element signature="e#7158#7159#0" expanded="false" />
+                <element signature="e#7203#7204#0" expanded="false" />
+                <element signature="e#7226#7227#0" expanded="false" />
+                <element signature="e#7374#7375#0" expanded="false" />
+                <element signature="e#7467#7468#0" expanded="false" />
+                <element signature="e#7599#7600#0" expanded="false" />
+                <element signature="e#7634#7635#0" expanded="false" />
+                <element signature="e#8344#8345#0" expanded="false" />
+                <element signature="e#8395#8396#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -143,30 +209,13 @@
       <list>
         <option value="Aspect" />
         <option value="AnnotationType" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getHandler</find>
-      <find>initApplicationContext</find>
-      <find>createToken</find>
-      <find>redisCache</find>
-      <find>send</find>
-      <find>setCell</find>
-      <find>TextMessage</find>
-      <find>ImageMessage</find>
-      <find>persistenc</find>
-      <find>SerializeXmlUtil</find>
-      <find>当前服务正在维护升级，请稍后重试</find>
-      <find>isWeekend</find>
-      <find>overtime</find>
-      <find>此处可以做类似于</find>
-      <find>a</find>
-      <find>ad</find>
-      <find>adv</find>
-      <find>advi</find>
       <find>advice</find>
       <find>advic</find>
       <find>y</find>
@@ -179,6 +228,24 @@
       <find>pageH</find>
       <find>page</find>
       <find>pageh</find>
+      <find>invoke</find>
+      <find>TransAction</find>
+      <find>transactional</find>
+      <find>cg</find>
+      <find>core</find>
+      <find>createTransactionIfNecessary</find>
+      <find>thread</find>
+      <find>createTransactio</find>
+      <find>bind</find>
+      <find>createTransactionI</find>
+      <find>doBegin</find>
+      <find>getTransaction</find>
+      <find>doB</find>
+      <find>bindSou</find>
+      <find>sess</find>
+      <find>sessi</find>
+      <find>sessio</find>
+      <find>session</find>
     </findStrings>
     <dirStrings>
       <dir>F:\Demo\project\Qin</dir>
@@ -198,57 +265,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/Transcoder.java" />
-        <option value="D:/Maven_Jar/org/springframework/data/spring-data-redis/1.8.1.RELEASE/spring-data-redis-1.8.1.RELEASE-sources.jar!/org/springframework/data/redis/connection/jedis/JedisConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/KryoTranscoder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/front/user/controller/LimitController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/cache/CacheService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/cache/impl/EhcacheImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/cache/impl/RedisCacheImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/business/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/interceptor/RequestLimitAspect.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/ExportExcelUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/EmployeeTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/HolidayUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/job/MyTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/lock/impl/RedisLock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/base/spring/ContextHolderUtils.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/filter/Ds.java" />
-        <option value="D:/Maven_Jar/org/jboss/resteasy/resteasy-jaxrs/3.0.16.Final/resteasy-jaxrs-3.0.16.Final-sources.jar!/org/jboss/resteasy/core/ResteasyHttpServletRequestWrapper.java" />
-        <option value="D:/Maven_Jar/com/alibaba/fastjson/1.2.34-RC1/fastjson-1.2.34-RC1-sources.jar!/com/alibaba/fastjson/JSON.java" />
-        <option value="D:/Maven_Jar/com/alibaba/fastjson/1.2.34-RC1/fastjson-1.2.34-RC1-sources.jar!/com/alibaba/fastjson/JSONStreamAware.java" />
-        <option value="D:/Maven_Jar/com/alibaba/fastjson/1.2.34-RC1/fastjson-1.2.34-RC1-sources.jar!/com/alibaba/fastjson/JSONAware.java" />
-        <option value="D:/Maven_Jar/com/alibaba/fastjson/1.2.34-RC1/fastjson-1.2.34-RC1-sources.jar!/com/alibaba/fastjson/JSONObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/filter/EdEE.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/business/service/EmployeeService.java" />
-        <option value="D:/Maven_Jar/javax/servlet/javax.servlet-api/4.0.0-b02/javax.servlet-api-4.0.0-b02-sources.jar!/javax/servlet/Filter.java" />
-        <option value="D:/Maven_Jar/net/sf/ehcache/ehcache/2.10.3/ehcache-2.10.3-sources.jar!/org/eclipse/jetty/servlet/FilterHolder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/filter/RequestFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/cglib/Ddff.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/cglib/Df.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/SellerService.java" />
+        <option value="D:/Maven_Jar/com/google/guava/guava/21.0/guava-21.0-sources.jar!/com/google/common/reflect/AbstractInvocationHandler.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE-sources.jar!/org/springframework/web/method/HandlerMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/PerformanceHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/MethodPerformance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/PerformanceMonitor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/JdkTest2.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/JdkTest.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestMethodCallbacks.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/SpringRepeat.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE-sources.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestClassCallbacks.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/SellerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/PerformanceHandlerProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/SellerServiceImpl.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/org/springframework/cglib/proxy/Enhancer.class" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml" />
-        <option value="D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/framework/adapter/MethodBeforeAdviceInterceptor.java" />
-        <option value="D:/Maven_Jar/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class" />
-        <option value="D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java" />
-        <option value="D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java" />
-        <option value="D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/aspectj/MethodInvocationProceedingJoinPoint.java" />
-        <option value="D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.java" />
-        <option value="D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/framework/adapter/AfterReturningAdviceInterceptor.java" />
-        <option value="D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/aspectj/AspectJAfterThrowingAdvice.java" />
-        <option value="D:/Maven_Jar/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java" />
-        <option value="D:/Maven_Jar/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/interceptor/InOutCollectionUtilAspect.java" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-db.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/GlobalExceptionHandler.java" />
-        <option value="D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/ThrowsAdvice.java" />
-        <option value="D:/Maven_Jar/org/aspectj/aspectjrt/1.8.10/aspectjrt-1.8.10-sources.jar!/org/aspectj/lang/ProceedingJoinPoint.java" />
-        <option value="D:/Maven_Jar/org/aspectj/aspectjrt/1.8.10/aspectjrt-1.8.10-sources.jar!/org/aspectj/lang/JoinPoint.java" />
-        <option value="D:/Maven_Jar/org/aspectj/aspectjrt/1.8.10/aspectjrt-1.8.10-sources.jar!/org/aspectj/runtime/reflect/JoinPointImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/constants/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/ExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/tools/DeepClone.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/future/proxy/Pa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/Pa.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/future/FutureCook.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/CglibTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/CglibHandlerProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/Seller.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/TransactionSynchronizationManager.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/ResourceHolderSupport.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/jta/JtaTransactionManager.java" />
+        <option value="D:/Maven_Jar/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar!/org/apache/xmlbeans/impl/jam/internal/elements/InvokableImpl.class" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE-sources.jar!/org/springframework/test/context/transaction/TransactionContext.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/TransactionTemplate.java" />
+        <option value="D:/Maven_Jar/org/springframework/data/spring-data-commons/1.13.1.RELEASE/spring-data-commons-1.13.1.RELEASE-sources.jar!/org/springframework/data/transaction/MultiTransactionStatus.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-context-support/4.3.7.RELEASE/spring-context-support-4.3.7.RELEASE-sources.jar!/org/springframework/scheduling/quartz/SchedulerAccessor.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/interceptor/DefaultTransactionAttribute.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/TransactionStatus.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/AbstractPlatformTransactionManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/PerformanceHandlerProxy.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/DefaultTransactionDefinition.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/PlatformTransactionManager.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE-sources.jar!/org/springframework/jdbc/datasource/DataSourceTransactionManager.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/annotation/Isolation.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/annotation/Propagation.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/TransactionDefinition.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/HolidayUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/MethodTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/XmlPraser.java" />
+        <option value="D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/annotation/Transactional.java" />
+        <option value="D:/Maven_Jar/org/mybatis/mybatis/3.4.2/mybatis-3.4.2-sources.jar!/org/apache/ibatis/transaction/Transaction.java" />
+        <option value="D:/Maven_Jar/org/mybatis/mybatis/3.4.2/mybatis-3.4.2-sources.jar!/org/apache/ibatis/transaction/jdbc/JdbcTransaction.java" />
       </list>
     </option>
   </component>
@@ -303,7 +370,6 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
     <option name="width" value="1924" />
     <option name="height" value="1056" />
   </component>
@@ -362,8 +428,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -389,8 +454,26 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="qin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -408,11 +491,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -512,16 +599,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="qin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Qin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ycmm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="designpattern" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="E:/Git/biz-intention" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
@@ -532,29 +654,30 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="qin" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.ycmm.model.wx" />
-      <recent name="com.ycmm.model" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Demo\Qin\src\main\resources" />
+      <recent name="F:\Demo\project\Qin\src\main\java\sqlMapper" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Demo\Qin\src\main\java\com\ycmm\common\designpattern\proxy\cglib" />
       <recent name="F:\Demo\Qin\src\main\java\com\ycmm\common\designpattern" />
       <recent name="F:\Demo\Qin\src\main\java\com\ycmm\common\utils" />
       <recent name="F:\Demo\Qin\src\main\java\com\ycmm\common\utils\sms" />
       <recent name="F:\Demo\Qin\src\test\java\test" />
-      <recent name="F:\Demo\Qin\src\main\java\com\ycmm\base\enums" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ycmm.common.designpattern.proxy.cglib" />
+      <recent name="com.ycmm.common.designpattern.proxy.jdk" />
       <recent name="test" />
       <recent name="com.ycmm.base.system" />
       <recent name="com.ycmm.business.service" />
-      <recent name="com.ycmm.business" />
-      <recent name="com.ycmm.base.mybatis" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\Demo\Qin\src\main\resources" />
-      <recent name="F:\Demo\project\Qin\src\main\java\sqlMapper" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ycmm.model.wx" />
+      <recent name="com.ycmm.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -569,21 +692,47 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.FutureCook">
-    <configuration default="false" name="EmployeeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Tomcat Server.qin">
+    <configuration default="false" name="JdkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="com.ycmm.common.designpattern.proxy.jdk.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="qin" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.EmployeeTest" />
+      <option name="PACKAGE_NAME" value="com.ycmm.common.designpattern.proxy.jdk" />
+      <option name="MAIN_CLASS_NAME" value="com.ycmm.common.designpattern.proxy.jdk.JdkTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CglibTest.testSeller" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ycmm.common.designpattern.proxy.cglib.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="qin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.ycmm.common.designpattern.proxy.cglib" />
+      <option name="MAIN_CLASS_NAME" value="com.ycmm.common.designpattern.proxy.cglib.CglibTest" />
+      <option name="METHOD_NAME" value="testSeller" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -616,54 +765,40 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="MyTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.ycmm.common.job.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ycmm.common.job.MyTask" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="qin" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestCon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="MethodTest.t" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="test.TestCon" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="qin" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.MethodTest" />
+      <option name="METHOD_NAME" value="t" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="qin" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
       <envs />
+      <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="FutureCook" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="XmlPraser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ycmm.common.designpattern.future.*" />
+          <option name="PATTERN" value="com.ycmm.common.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ycmm.common.designpattern.future.FutureCook" />
+      <option name="MAIN_CLASS_NAME" value="com.ycmm.common.utils.XmlPraser" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1227,19 +1362,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.qin" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.EmployeeTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.HolidayUtil" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MyTask" />
-      <item index="4" class="java.lang.String" itemvalue="Application.TestCon" />
-      <item index="5" class="java.lang.String" itemvalue="Application.FutureCook" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.JdkTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CglibTest.testSeller" />
+      <item index="3" class="java.lang.String" itemvalue="Application.HolidayUtil" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MethodTest.t" />
+      <item index="5" class="java.lang.String" itemvalue="Application.XmlPraser" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.FutureCook" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TestCon" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MyTask" />
-        <item index="3" class="java.lang.String" itemvalue="Application.HolidayUtil" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.EmployeeTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.XmlPraser" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MethodTest.t" />
+        <item index="2" class="java.lang.String" itemvalue="Application.HolidayUtil" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CglibTest.testSeller" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.JdkTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1266,7 +1401,10 @@
       <workItem from="1525318361222" duration="128856000" />
       <workItem from="1526960166774" duration="49250000" />
       <workItem from="1527768201970" duration="97890000" />
-      <workItem from="1532078976324" duration="55196000" />
+      <workItem from="1532078976324" duration="95763000" />
+      <workItem from="1533526904287" duration="6243000" />
+      <workItem from="1534212010594" duration="13152000" />
+      <workItem from="1535438252051" duration="3490000" />
     </task>
     <task id="LOCAL-00001" summary="拦截器修改">
       <created>1525319033088</created>
@@ -1429,43 +1567,50 @@
       <option name="project" value="LOCAL" />
       <updated>1533093274166</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="future 设计模式">
+      <created>1533117010866</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1533117010866</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EmployeeTest - 2018.07.25 at 18h 49m 51s.xml">
-      <configuration name="EmployeeTest" configurationId="JUnit" />
+    <history-entry file="CglibTest_testSeller - 2018.08.03 at 17h 53m 39s.xml">
+      <configuration name="CglibTest.testSeller" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2018.07.13 at 10h 17m 18s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="CglibTest_testSeller - 2018.08.03 at 17h 54m 28s.xml">
+      <configuration name="CglibTest.testSeller" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2018.07.13 at 10h 17m 24s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="CglibTest_testSeller - 2018.08.03 at 17h 54m 46s.xml">
+      <configuration name="CglibTest.testSeller" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2018.07.13 at 10h 18m 50s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="CglibTest_testSeller - 2018.08.03 at 17h 55m 27s.xml">
+      <configuration name="CglibTest.testSeller" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2018.07.13 at 10h 18m 55s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="CglibTest_testSeller - 2018.08.03 at 17h 55m 47s.xml">
+      <configuration name="CglibTest.testSeller" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2018.07.13 at 10h 18m 59s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="CglibTest_testSeller - 2018.08.03 at 17h 56m 13s.xml">
+      <configuration name="CglibTest.testSeller" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2018.07.13 at 10h 19m 03s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="CglibTest_testSeller - 2018.08.03 at 17h 56m 59s.xml">
+      <configuration name="CglibTest.testSeller" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2018.07.13 at 10h 19m 06s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="CglibTest_testSeller - 2018.08.03 at 17h 58m 35s.xml">
+      <configuration name="CglibTest.testSeller" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest - 2018.07.13 at 10h 19m 11s.xml">
-      <configuration name="UserTest" configurationId="JUnit" />
+    <history-entry file="CglibTest_testSeller - 2018.08.03 at 17h 58m 52s.xml">
+      <configuration name="CglibTest.testSeller" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="UserTest_getUser - 2018.07.13 at 10h 19m 16s.xml">
-      <configuration name="UserTest.getUser" configurationId="JUnit" />
+    <history-entry file="MethodTest_t - 2018.08.14 at 10h 19m 40s.xml">
+      <configuration name="MethodTest.t" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="448333000" />
+    <option name="totallyTimeSpent" value="511785000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1477,7 +1622,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1924" height="1056" extended-state="0" />
+    <frame x="-8" y="0" width="1924" height="1056" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1491,21 +1636,19 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" x="22" y="352" width="1876" height="336" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32104123" sideWeight="0.49785408" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5813449" sideWeight="0.49573562" order="3" side_tool="false" content_ui="tabs" x="22" y="352" width="1876" height="336" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18438178" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2635575" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2462039" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5813449" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20654507" sideWeight="0.496208" order="0" side_tool="false" content_ui="combo" x="776" y="166" width="355" height="707" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29826465" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21459228" sideWeight="0.496208" order="0" side_tool="false" content_ui="combo" x="776" y="166" width="355" height="707" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2585837" sideWeight="0.503792" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2462039" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2585837" sideWeight="0.503792" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1514,7 +1657,9 @@
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12242687" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32104123" sideWeight="0.49785408" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2462039" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1583,7 +1728,8 @@
     <MESSAGE value="Spring Aop实例之 注解  配置" />
     <MESSAGE value="Spring Aop实例之 aspect xml  配置" />
     <MESSAGE value="深克隆  以及 对象转换" />
-    <option name="LAST_COMMIT_MESSAGE" value="深克隆  以及 对象转换" />
+    <MESSAGE value="future 设计模式" />
+    <option name="LAST_COMMIT_MESSAGE" value="future 设计模式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1606,18 +1752,31 @@
           <properties />
           <option name="timeStamp" value="138" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/JdkTest.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/test/HolidayUtil.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="141" />
+      <option name="time" value="157" />
     </breakpoint-manager>
     <watches-manager>
-      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
-        <watch expression="arg" />
-      </configuration>
       <configuration name="JUnit">
         <watch expression="key.getBytes()" />
         <watch expression="key.getBytes()" />
         <watch expression="in" />
         <watch expression="mapperInterface" />
+        <watch expression="clazz.getClass()" />
+        <watch expression="this" />
+        <watch expression="clazz.getClass()" />
+        <watch expression="sellerClass" />
       </configuration>
     </watches-manager>
   </component>
@@ -1626,426 +1785,429 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/JdkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/SellerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="9" column="16" lean-forward="true" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/lock/impl/RedisLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="134" column="5" lean-forward="false" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+        <state relative-caret-position="1166">
+          <caret line="107" column="28" lean-forward="false" selection-start-line="107" selection-start-column="20" selection-end-line="107" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/cache/impl/RedisCacheImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="54" column="5" lean-forward="false" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/org/springframework/cglib/proxy/Enhancer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="159" column="0" lean-forward="false" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="332" column="5" lean-forward="true" selection-start-line="332" selection-start-column="5" selection-end-line="332" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="90" column="9" lean-forward="true" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="493" column="36" lean-forward="true" selection-start-line="493" selection-start-column="36" selection-end-line="493" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/ExportExcelUtils.java">
+    <entry file="jar://D:/Maven_Jar/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-661">
-          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/TestCon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/aspectj/AspectJMethodBeforeAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="43" column="5" lean-forward="true" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/framework/adapter/MethodBeforeAdviceInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="617" column="0" lean-forward="false" selection-start-line="617" selection-start-column="0" selection-end-line="617" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/aspectj/MethodInvocationProceedingJoinPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="220">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/Maven_Jar/org/springframework/spring-core/4.3.7.RELEASE/spring-core-4.3.7.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="106" column="44" lean-forward="true" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/framework/adapter/AfterReturningAdviceInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/aspectj/AspectJAfterThrowingAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3949">
-          <caret line="740" column="30" lean-forward="false" selection-start-line="740" selection-start-column="30" selection-end-line="740" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/controller/FrontHandleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="658" column="0" lean-forward="false" selection-start-line="658" selection-start-column="0" selection-end-line="658" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="180" column="5" lean-forward="true" selection-start-line="180" selection-start-column="5" selection-end-line="180" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="906" column="0" lean-forward="false" selection-start-line="906" selection-start-column="0" selection-end-line="906" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-webmvc/4.3.7.RELEASE/spring-webmvc-4.3.7.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3003">
-          <caret line="843" column="9" lean-forward="true" selection-start-line="843" selection-start-column="9" selection-end-line="843" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/redis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-286">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/ehcache.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-154">
+          <caret line="104" column="0" lean-forward="false" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-db.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="45" column="93" lean-forward="true" selection-start-line="45" selection-start-column="93" selection-end-line="45" selection-end-column="93" />
+        <state relative-caret-position="198">
+          <caret line="78" column="16" lean-forward="true" selection-start-line="78" selection-start-column="16" selection-end-line="78" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/BaseException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/Seller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-          <folding />
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/base/ErrorMsgException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/business/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="-682">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/base/BadRequestException.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/business/service/EmployeeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="418">
+          <caret line="46" column="7" lean-forward="true" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/base/NoAuthException.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-web/4.3.7.RELEASE/spring-web-4.3.7.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="-382">
+          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/base/UnauthorizedExcception.java">
+    <entry file="jar://D:/Maven_Jar/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar!/org/apache/xmlbeans/impl/jam/internal/elements/InvokableImpl.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="36">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/controller/SystemHandleController.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/ResourceHolderSupport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="484">
+          <caret line="38" column="41" lean-forward="true" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/enums/ExceptionCause.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/jta/JtaTransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="20" lean-forward="false" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
+        <state relative-caret-position="396">
+          <caret line="128" column="0" lean-forward="true" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Maven_Jar/org/springframework/spring-aop/4.3.7.RELEASE/spring-aop-4.3.7.RELEASE-sources.jar!/org/springframework/aop/ThrowsAdvice.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/CglibHandlerProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="50" column="29" lean-forward="false" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#2298#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="212">
+          <caret line="58" column="35" lean-forward="true" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Maven_Jar/org/aspectj/aspectjrt/1.8.10/aspectjrt-1.8.10-sources.jar!/org/aspectj/lang/ProceedingJoinPoint.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-test/4.3.7.RELEASE/spring-test-4.3.7.RELEASE-sources.jar!/org/springframework/test/context/transaction/TransactionContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="30" column="46" lean-forward="true" selection-start-line="30" selection-start-column="46" selection-end-line="30" selection-end-column="46" />
-          <folding />
+        <state relative-caret-position="751">
+          <caret line="97" column="57" lean-forward="false" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/interceptor/InOutCollectionUtilAspect.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/TransactionTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="202">
+          <caret line="111" column="52" lean-forward="false" selection-start-line="111" selection-start-column="38" selection-end-line="111" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Java/jdk1.8.0_65/src.zip!/java/lang/Object.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/data/spring-data-commons/1.13.1.RELEASE/spring-data-commons-1.13.1.RELEASE-sources.jar!/org/springframework/data/transaction/MultiTransactionStatus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="202">
+          <caret line="172" column="34" lean-forward="false" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Maven_Jar/org/aspectj/aspectjrt/1.8.10/aspectjrt-1.8.10-sources.jar!/org/aspectj/runtime/reflect/JoinPointImpl.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-context-support/4.3.7.RELEASE/spring-context-support-4.3.7.RELEASE-sources.jar!/org/springframework/scheduling/quartz/SchedulerAccessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="95" column="31" lean-forward="true" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
-          <folding>
-            <element signature="e#2697#2698#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="202">
+          <caret line="199" column="70" lean-forward="false" selection-start-line="199" selection-start-column="56" selection-end-line="199" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Maven_Jar/org/aspectj/aspectjrt/1.8.10/aspectjrt-1.8.10-sources.jar!/org/aspectj/lang/JoinPoint.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/interceptor/DefaultTransactionAttribute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="71" column="16" lean-forward="false" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
+        <state relative-caret-position="-1031">
+          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="584" column="16" lean-forward="false" selection-start-line="584" selection-start-column="16" selection-end-line="584" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/TransactionStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/AbstractPlatformTransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="138" column="0" lean-forward="false" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-jdbc/4.3.7.RELEASE/spring-jdbc-4.3.7.RELEASE-sources.jar!/org/springframework/jdbc/datasource/DataSourceTransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="225" column="24" lean-forward="false" selection-start-line="225" selection-start-column="24" selection-end-line="225" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/TransactionSynchronizationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="176" column="50" lean-forward="true" selection-start-line="176" selection-start-column="50" selection-end-line="176" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/interceptor/TransactionInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1078">
+          <caret line="74" column="7" lean-forward="false" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/cglib/CglibTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-mvc.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="28" column="40" lean-forward="false" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="40" />
+        <state relative-caret-position="264">
+          <caret line="12" column="65" lean-forward="false" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/interceptor/RequestLimitAspect.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/interceptor/TransactionAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="58" column="32" lean-forward="false" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
-          <folding />
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/constants/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/jdk/PerformanceHandlerProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/ExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="67" />
+        <state relative-caret-position="924">
+          <caret line="54" column="29" lean-forward="false" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#936#937#0" expanded="false" />
+            <element signature="e#972#973#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/tools/CommonUtils.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/PlatformTransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="374">
+          <caret line="67" column="7" lean-forward="true" selection-start-line="67" selection-start-column="7" selection-end-line="67" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/support/DefaultTransactionDefinition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/tools/DeepClone.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="593">
-          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+        <state relative-caret-position="550">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#9076#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3412#3413#0" expanded="false" />
+            <element signature="e#3465#3466#0" expanded="false" />
+            <element signature="e#4861#4862#0" expanded="false" />
+            <element signature="e#4899#4900#0" expanded="false" />
+            <element signature="e#6213#6214#0" expanded="false" />
+            <element signature="e#6246#6247#0" expanded="false" />
+            <element signature="e#6626#6627#0" expanded="false" />
+            <element signature="e#6652#6653#0" expanded="false" />
+            <element signature="e#6792#6793#0" expanded="false" />
+            <element signature="e#6823#6824#0" expanded="false" />
+            <element signature="e#6872#6873#0" expanded="false" />
+            <element signature="e#6899#6900#0" expanded="false" />
+            <element signature="e#7135#7136#0" expanded="false" />
+            <element signature="e#7158#7159#0" expanded="false" />
+            <element signature="e#7203#7204#0" expanded="false" />
+            <element signature="e#7226#7227#0" expanded="false" />
+            <element signature="e#7374#7375#0" expanded="false" />
+            <element signature="e#7467#7468#0" expanded="false" />
+            <element signature="e#7599#7600#0" expanded="false" />
+            <element signature="e#7634#7635#0" expanded="false" />
+            <element signature="e#8344#8345#0" expanded="false" />
+            <element signature="e#8395#8396#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/business/service/impl/EmployeeServiceImpl.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/annotation/Isolation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="73" column="38" lean-forward="true" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
+        <state relative-caret-position="484">
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#3402#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/annotation/Propagation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="36" column="26" lean-forward="false" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#4501#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/HolidayUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-445">
+          <caret line="93" column="5" lean-forward="true" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/proxy/Pa.java">
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/TransactionDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4356">
+          <caret line="212" column="7" lean-forward="false" selection-start-line="212" selection-start-column="7" selection-end-line="212" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#12072#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/TestExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/UserTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="450" column="28" lean-forward="true" selection-start-line="450" selection-start-column="28" selection-end-line="450" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Maven_Jar/com/alibaba/fastjson/1.2.34-RC1/fastjson-1.2.34-RC1-sources.jar!/com/alibaba/fastjson/JSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="233" column="0" lean-forward="true" selection-start-line="233" selection-start-column="0" selection-end-line="233" selection-end-column="0" />
-          <folding>
-            <element signature="e#17198#17199#0" expanded="true" />
-            <element signature="e#17261#17262#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/base/exceptions/GlobalExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/business/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/TestCon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <caret line="16" column="53" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="31" column="13" lean-forward="true" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/designpattern/future/FutureCook.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/XmlPraser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+        <state relative-caret-position="88">
+          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/front/handle/controller/FrontHandleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1496">
+          <caret line="90" column="76" lean-forward="false" selection-start-line="90" selection-start-column="76" selection-end-line="90" selection-end-column="76" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1878#1879#0" expanded="true" />
-            <element signature="e#1936#1937#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ycmm/common/utils/FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1606">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/MethodTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/springframework/spring-tx/4.3.7.RELEASE/spring-tx-4.3.7.RELEASE-sources.jar!/org/springframework/transaction/annotation/Transactional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="147" column="7" lean-forward="false" selection-start-line="147" selection-start-column="7" selection-end-line="147" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#7847#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/mybatis/mybatis/3.4.2/mybatis-3.4.2-sources.jar!/org/apache/ibatis/transaction/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Maven_Jar/org/mybatis/mybatis/3.4.2/mybatis-3.4.2-sources.jar!/org/apache/ibatis/transaction/jdbc/JdbcTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
